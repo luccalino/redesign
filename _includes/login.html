@@ -1,0 +1,73 @@
+<section id="login">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-12 text-center">
+                <h2 class="section-heading">Kontaktiere uns!</h2>
+                <hr class="primary">
+            </div>
+        </div>
+    </div>
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-4 col-md-6 text-center">
+                <div class="service-box">
+                    <h3>Mach mit!</h3>
+                    <p class="text-muted">Melde dich an, werde Vereinsmitgleid und bestelle mit.</p>
+
+<button onclick="document.getElementById('id01').style.display='block'" class="btn btn-primary btn-xl page-scroll" style="width:auto;">Anmeldung</button>
+
+<div id="id01" class="modal">
+  <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">&times;</span>
+  <form class="modal-content" action="/action_page.php">
+    <div class="container">
+      <h1>Anmeldung</h1>
+      <p>Fülle bitte das Formular aus. Danke.</p>
+      <hr>
+      <label for="name"><b>Vor- und Nachname</b></label>
+      <input type="text" placeholder="Dein Name" name="name" required>
+
+      <label for="address"><b>Adresse</b></label>
+      <input type="text" placeholder="Deine Adresse" name="address" required>
+
+      <label for="email"><b>E-Mail</b></label>
+      <input type="text" placeholder="Deine E-Mail Adresse" name="email" required>
+
+      <p>Durch die Anmeldung annerkennst du unsere <a href="#" style="color:dodgerblue">AGB</a>.</p>
+
+      <div class="clearfix">
+        <button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">Abbrechen</button>
+        <button type="submit" class="signupbtn">Anmelden</button>
+      </div>
+    </div>
+  </form>
+</div>
+
+<script>
+// Get the modal
+var modal = document.getElementById('id01');
+
+// When the user clicks anywhere outside of the modal, close it
+window.onclick = function(event) {
+  if (event.target == modal) {
+    modal.style.display = "none";
+  }
+}
+</script>
+                </div>
+            </div>
+           <div class="col-lg-4 col-md-6 text-center">
+                <div class="service-box">
+                    <h3>Hast du Fragen?</h3>
+                    <p class="text-muted">Schreibe uns eine E-Mail. Wir freuen uns von dir zu lesen.</p>
+                </div>
+               <button onclick="location.href='mailto:em@i.l';" class="btn btn-primary btn-xl page-scroll" style="width:auto;">E-Mail</button>
+            </div>
+            <div class="col-lg-4 col-md-6 text-center">
+                <div class="service-box">
+                    <h3>Clone the concept</h3>
+                    <p class="text-muted">Wenn du deine eigene Bestellgemeinschaft in deinem Quartier aufziehen möchtest teilen wir gerne unsere Erfahrungen.</p>
+                </div>
+            </div>
+        </div>
+    </div>       
+</section>
