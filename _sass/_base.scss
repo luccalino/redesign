@@ -359,7 +359,7 @@ body {
 
 /* Full-width input fields */
 input[type=text], input[type=password] {
-  width: 50%;
+  width: 65%;
   padding: 15px;
   margin: 5px 0 22px 0;
   display: inline-block;
@@ -377,8 +377,8 @@ input[type=text]:focus, input[type=password]:focus {
 button {
   background-color: #4CAF50;
   color: white;
-  padding: 14px 20px;
-  margin: 8px 0;
+  padding: 14px 14px; //20px
+  margin: 8px 8px; //0
   border: none;
   cursor: pointer;
   width: 50%;
