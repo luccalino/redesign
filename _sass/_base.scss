@@ -359,7 +359,7 @@ body {
 
 /* Full-width input fields */
 input[type=text], input[type=password] {
-  width: 65%;
+  width: 100%;
   padding: 15px;
   margin: 5px 0 22px 0;
   display: inline-block;
@@ -397,8 +397,8 @@ button:hover {
 
 /* Float cancel and signup buttons and add an equal width */
 .cancelbtn, .signupbtn {
-  float: left;
-  width: 50%;
+  //float: left;
+  width: 25%;
 }
 
 /* Add padding to container elements */
