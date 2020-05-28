@@ -181,9 +181,10 @@ header {
             hr {
                 margin: 30px auto;
             }
-            p {
+            p span {
                 font-weight: 300;
-                color: white; // rgba(white, .7);
+                color: #4CAF50; //white; // rgba(white, .7);
+                background-color: $theme-blue;
                 font-size: 16px;
                 margin-bottom: 50px;
             }
