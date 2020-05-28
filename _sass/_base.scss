@@ -104,7 +104,7 @@ aside {
             &.active {
                 > a,
                 > a:focus {
-                    color: $theme-primary !important;
+                    color: white !important; //$theme-primary
                     background-color: $theme-blue; //transparent
                     &:hover {
                         background-color: $theme-blue; //transparent
