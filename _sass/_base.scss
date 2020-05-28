@@ -135,7 +135,7 @@ aside {
             border-color: rgba($theme-dark, .5);
             .navbar-header .navbar-brand {
                 color: $theme-primary;
-                font-size: 14px;
+                font-size: 16px; //14
                 &:hover,
                 &:focus {
                     color: darken($theme-primary, 10%);
