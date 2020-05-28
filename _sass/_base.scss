@@ -170,20 +170,19 @@ header {
         width: 100%;
         background-color: transparent; //$theme-blue;
         .header-content-inner {
-            background-color: $theme-blue;
             h1 {
                 font-weight: 700;
                 text-transform: uppercase;
                 margin-top: 0;
                 margin-bottom: 0;
-                color: #4CAF50; //#F05F40;
+                color: $theme-primary; //#F05F40;
             }
             hr {
                 margin: 30px auto;
             }
             p {
                 font-weight: 300;
-                color: #4CAF50; //white; // rgba(white, .7);
+                color: rgba(white, .7); //#4CAF50; //white; // ;
                 font-size: 16px;
                 margin-bottom: 50px;
             }
