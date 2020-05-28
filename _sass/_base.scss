@@ -170,9 +170,10 @@ header {
         width: 100%;
         background-color: transparent; //$theme-blue;
         .header-content-inner {
-            h1 {
+            h1 span {
                 font-weight: 700;
                 text-transform: uppercase;
+                background-color: $theme-blue;
                 margin-top: 0;
                 margin-bottom: 0;
                 color: #4CAF50; //#F05F40;
