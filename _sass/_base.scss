@@ -120,7 +120,7 @@ aside {
             color: $theme-primary; //rgba(white, .7);
             &:hover,
             &:focus {
-                color: white;
+                color: $theme-primary;
             }
         }
         .nav > li > a,
@@ -134,7 +134,7 @@ aside {
             background-color: white;
             border-color: rgba($theme-dark, .5);
             .navbar-header .navbar-brand {
-                color: $theme-primary;
+                color: white;
                 font-size: 16px; //14
                 &:hover,
                 &:focus {
