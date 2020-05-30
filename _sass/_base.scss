@@ -95,7 +95,7 @@ aside {
             > a:focus {
                 text-transform: uppercase;
                 font-weight: 700;
-                font-size: 16px;
+                font-size: 13px;
                 color: $theme-dark;
                 &:hover {
                     color: $theme-primary;
@@ -115,9 +115,9 @@ aside {
     }
     @media (min-width: 768px) {
         background-color: transparent;
-        border-color: white; //rgba(white, .3); 
+        border-color: rgba(white, .3);
         .navbar-header .navbar-brand {
-            color: rgba(white, .7); //white; 
+            color: rgba(white, .7);
             &:hover,
             &:focus {
                 color: white;
@@ -132,10 +132,10 @@ aside {
         }
         &.affix {
             background-color: white;
-            border-color: white; //rgba($theme-dark, .5);
+            border-color: rgba($theme-dark, .5);
             .navbar-header .navbar-brand {
                 color: $theme-primary;
-                font-size: 16px;
+                font-size: 14px;
                 &:hover,
                 &:focus {
                     color: darken($theme-primary, 10%);
