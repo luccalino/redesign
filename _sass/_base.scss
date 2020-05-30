@@ -115,7 +115,7 @@ aside {
     }
     @media (min-width: 768px) {
         background-color: transparent;
-        border-color: rgba(white, .3);
+        border-color: white; // rgba(white, .3);
         .navbar-header .navbar-brand {
             color: white; //rgba(white, .7);
             &:hover,
@@ -125,14 +125,14 @@ aside {
         }
         .nav > li > a,
         .nav > li > a:focus {
-            color: white; //rgba(white, .7);
+            color: rgba(white, .7);
             &:hover {
                 color: white;
             }
         }
         &.affix {
             background-color: white;
-            border-color: rgba($theme-dark, .5);
+            border-color: white; //rgba($theme-dark, .5);
             .navbar-header .navbar-brand {
                 color: $theme-primary;
                 font-size: 16px;
