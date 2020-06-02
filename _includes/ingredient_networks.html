@@ -1,0 +1,429 @@
+
+<p>September 15 2019</p>
+
+<h3 id="introduction">Summary</h3>
+<p>Obesity has become a pandemic, occurring in a multitude of countries across the globe and affecting a large share of people in the population. A popular belief about how to tackle obesity has been to encourage cooking at home and discourage the consumption of processed, ready-made food. This paper studies ingredient-level home-cooked recipe compositions of four major world food cultures. It argues that recipes from different food cultures feature distinct ingredients and ingredient pairings due to the underlying food culture’s geography, history, and philosophy. The resulting healthiness of the recipes may be more or less favorable to tackle the obesity pandemic. Recipes from the Anglo-saxon food culture display a high and joint use of sugar, butter, and flour. They display the highest energy, carbohydrate, sugar, fat, and saturated fat levels and are thus the unhealthiest home-cooked recipes as defined by the World Health Organisation. Recipes from the Mediterranean food cultures feature great joint use of olive oil, onions, and garlic cloves. Recipes from the Asian food culture are the healthiest and report high use of plant-based oils and fats, many rice-based ingredients and fermented foods. Some food cultures are more prone to an obesogenic environment than others even if everybody would hypothetically engage in cooking ’local’ recipes at home because of the used ingredients in the most elementary peculiarity of a food culture. The underlying food culture may therefore act as a point of departure for a healthy home-cooking.<br />
+</p>
+
+
+<p>
+<a href="https://github.com/luccalino/luccalino.github.io/tree/master/code/ingredient_networks" target="_blank"><i class="fab fa-fw fa-github" aria-hidden="true"></i></a> Click to get code or <a href="https://github.com/luccalino/luccalino.github.io/raw/master/files/ingredient_networks/home_cooking.pdf" download="home_cooking.pdf"><i class="fas fa-arrow-circle-down" aria-hidden="true"></i></a> download the paper as pdf.  
+</p>
+ 
+<h1 id="introduction">Introduction</h1>
+<p>At the global level obesity has nearly tripled in the last 44 years, resulting in 13% of the world population being obese in 2016 <span class="citation" data-cites="who_obesity">(World Health Organization 2018)</span>. In most parts of the world today, more people are dying as a consequence of overweight as opposed to underweight. Obesity is a medical condition in which excess body fat has been accumulated. An individual is diagnosed as obese if the body mass index (BMI) that is the weight (in kg) in relation to the squared height (in m<span class="math inline"><em></em><sup>2</sup></span>) is greater or equal to 30. Due to the complex nature of obesity, a multitude of theoretical models exist to explain it (see <span class="citation" data-cites="ulijaszek2017models">Ulijaszek (2017)</span> for a review). An explanatory approach that has a long history in obesity science depicts the energy balance model. It puts energy intake and energy expenditure into relation. Weight gain is the result of increased energy consumption without an equal increase in physical activity. Obesity occurs if such a positive energy environment is maintained for a prolonged period. It is a serious medical condition that has been linked to severe negative health effects such as high blood pressure, type 2 diabetes, coronary heart disease, joint problems and social as well as psychological disorders (see <span class="citation" data-cites="Kelishadi_2014">Kelishadi (2014)</span> for a review).</p>
+<p>Because of the rapid increase of the occurrence of obesity and its burdensome impact on public health expenses, obesity studies have become an integral field in academia. There is a large body of literature suggesting that one important reason for the obesity pandemic is the current industrial food system in which availability, affordability, and marketing of high-energy, processed and pre-cooked foods are changing the dietary environment (see <span class="citation" data-cites="Swinburn_2011">Swinburn et al. (2011)</span>, <span class="citation" data-cites="Zobel_2016">Zobel et al. (2016)</span>, <span class="citation" data-cites="c868f465a1bb47a6a2618ff1f4ee28d6">Floros et al. (2010)</span> for an overview).<a href="#fn1" class="footnote-ref" id="fnref1"><sup>1</sup></a> If we do not have to cook food for ourselves, we tend to eat more <span class="citation" data-cites="Cutler_2003">(Cutler, Glaeser, and Shapiro 2003)</span>. Particularly in advanced economies, processed foods have become the dominant calorie source of many because of time constraints and the convenience of processed foods. The consumption of processed foods is exceptionally high among low-income households because of the low price of these mass-produced products.</p>
+<p>A popular belief how to tackle the obesity pandemic is therefore to refrain from consuming processed and ready-made foods and engage in home-cooking, that is defined as food prepared in the home. &quot;[...] You want Americans to eat less? I have the diet for you. It’s short, it’s simple. Here’s my diet plan: Cook it yourself. That’s it. Eat anything you want – just as long as you’re willing to cook it yourself&quot; <span class="citation" data-cites="nytimes">(Pollan 2019)</span>.</p>
+<p>This wide-spread opinion of home-cooking as an answer against obesity has attracted scientific studies. <span class="citation" data-cites="Wolfson_2014">Wolfson and Bleich (2014)</span> show in a large cross-sectional study that home-cooking among adults aged 20 years and over in the USA is associated with consuming a healthier diet, independent of one trying to loose weight or not. They conclude that strategies are needed to encourage home-cooking because of its beneficial health impact. <span class="citation" data-cites="Smith_2010">Smith et al. (2010)</span> find similar results for Australian adults. Yet, evidence on this matter remains inconsistent. For instance, <span class="citation" data-cites="Howard:2012aa">Howard, Adams, and White (2012)</span> compare the nutritional contents of home-cooked recipes designed by celebrity chefs and ready-to-eat meals from supermarkets in the UK. In contrast to the previous studies, they show that neither celebrity chef recipes nor supermarket meals meet the WHO dietary recommendations. Celebrity chef recipes intended for home cooking are less healthy than ready-to-eat meals and contain more energy, protein, fat, saturated fat, and less fibre per portion. In addition to the inconsistent evidence, <span class="citation" data-cites="MILLS2017116">Mills et al. (2017)</span> show that studies looking at the effect of home-cooking on health are almost exclusively conducted in English-speaking countries (47% in the US, 18% in Canada, 13% in the UK and 8% in Australia).</p>
+<p>A possible reason for the inconsistent evidence of the effect of home-cooking on one’s health might stem from the fact that the healthiness of home-cooking greatly depends on the type and amount of ingredients used. <span class="citation" data-cites="MOSER201099">Möser (2010)</span> documents for Germany that since the beginning of the 20th century, people have been home-cooking less often with basic ingredients and used more semi-processed ingredients instead. The healthiness clearly also depends on the kind of recipes that are cooked. This is the focus of this paper. Recipes from different food cultures are built upon a distinct set of ingredients and ingredient pairings, which are a function of the underlying food culture’s geography, history, and philosophy. For example, <span class="citation" data-cites="Ahn_2011">Ahn et al. (2011)</span> show that Western cuisines use ingredients jointly that feature similar flavour compounds (i.e. ’food pairing’) while East Asian cuisines tend to avoid compound sharing ingredients.</p>
+<p>I study therefore four dominant world food cultures – composed of eleven world cuisines that are more universal than just the English-speaking world – with regards to their nutrition content, ingredient use, and ingredient pairings. Do recipes from different world food cultures depict varying nutritional content? What kind of ingredients are used, and how are they combined?</p>
+<p>While home-cooking may be a desirable activity that needs to be encouraged for a myriad of reasons, this study aims at highlighting the fact that home-cooked recipes from different food cultures may be more or less suitable to tackle the obesity pandemic.<a href="#fn2" class="footnote-ref" id="fnref2"><sup>2</sup></a> Different food cultures are the product of distinct geographies, histories, and philosophies that have led to diverse nutrition profiles, ingredient uses, and ingredient pairings. Some food cultures are therefore more prone to an obesogenic environment, even if everybody hypothetically engages in home-cooking. The nutritional composition of the home-cooked recipes is the decisive factor to determine their healthiness, and the recipe’s underlying food culture may therefore act as a point of departure for a healthy home-cooking.</p>
+<p>The structure of the paper is as follows. Section <a href="#data" data-reference-type="ref" data-reference="data">2</a> describes the data source as well as the collection and processing methods. Section <a href="#fcc" data-reference-type="ref" data-reference="fcc">3</a> characterises the four food cultures which are defined out of 11 world cuisines. Section <a href="#res" data-reference-type="ref" data-reference="res">4</a> presents the results in three subsections and section <a href="#dis" data-reference-type="ref" data-reference="dis">5</a> discusses them jointly. Lastly, section <a href="#con" data-reference-type="ref" data-reference="con">6</a> concludes.</p>
+<h1 id="data">Data</h1>
+<p>The data for this study comes from the <em>BBC Good Food</em> cooking website, hereafter referred to as the <em>BBCGF</em>. <em>BBCGF</em> offers a wide range of recipes intended for home-cooking from several world cuisines in English language. The reasons why I use <em>BBCGF</em> as the data source are threefold:</p>
+<ul>
+<li><p><em>BBCGF</em> allows its website to be scraped.</p></li>
+<li><p>It has, to my best knowledge, never been used as a data source for studying recipe ingredients.</p></li>
+<li><p>It offers a wide variety of the most popular recipes from the major world cuisines.</p></li>
+</ul>
+
+<h2 id="collection">Collection</h2>
+<p>I crawl 441 recipes from 11 different world cuisines from <em>BBCGF</em>.<a href="#fn3" class="footnote-ref" id="fnref3"><sup>3</sup></a> Web scraping or crawling is an algorithm that extracts all specified information from a webpage and assembles it in a database. I therefore write code to extract the recipe title, list of ingredients, nutrition information, serving size, and other information from <em>BBCGF</em>. Table 1 provides summary statistics of the compiled dataset.</p>
+ 
+<p>
+<img src="/files/ingredient_networks/tab1_ss.png" width = "800" alt> <center><em>Table 1: Summary Statistics</em></center>
+</p>
+ 
+<p>The range of crawled recipes lies between 28 (Spanish cuisine) and 58 (American cuisine) and the mean at 40 scraped recipes per cuisine. The number of unique ingredients per cuisine, that is the sum of ingredients which are different from one to another, ranges markedly between 100 (Spanish) and 200 (American). The 11 cuisines depict with an average of 126 unique ingredients a heterogeneous ingredient profile. Table 1 is ranked in descending order according to average calories per serving. The table shows a link between the energy intensity of a cuisine and the share of obese people. This is further discussed in section <a href="#fcc" data-reference-type="ref" data-reference="fcc">3</a>.</p>
+<p>A drawback from <em>BBCGF</em> is that the website does not provide a recipe type classification, i.e., whether the dish is intended for breakfast, as a main dish, dessert, or snack. However, since <em>BBCGF</em> provides the signature dishes of each cuisine, I consider the sample representative and expressive of the cuisine irrespective of the recipe type composition.<a href="#fn4" class="footnote-ref" id="fnref4"><sup>4</sup></a> A further potential limitation that needs to be considered is the fact that the data comes from a British website. Non-British recipes may therefore be subject to a ’Britain-ification’. However, section <a href="#dis" data-reference-type="ref" data-reference="dis">5</a> will address and falsify such concerns. Another disadvantage results from the use of ingredient frequencies, as defined in the following subsection, instead of metric quantities. Although the quantities are available and structured in the dataset, they are used heterogeneously within the ingredient classes (e.g., the use of <em>chilli powder</em> is indicated in grams in one recipe and in tablespoons in another). This requires many assumptions to homogenise the quantity units (i.e., how many grams are a tablespoon of <em>chilli powder</em>), and ingredient frequencies are therefore preferred.</p>
+<h2 id="proc">Processing</h2>
+<p>The collected heterogeneous dataset requires data processing to obtain an analysable and homogeneous data structure. To achieve this, I follow <span class="citation" data-cites="teng2012recipe">Teng, Lin, and Adamic (2012)</span>.</p>
+<p>First, I write code to categorise the freeform ingredient list (e.g., <em>400g skinless white fish fillet</em>) into a quantity (<em>400</em>), unit (<em>g</em>), adjective (<em>skinless, white</em>), ingredient (<em>fish</em>), attribute (<em>fillet</em>) database. The splitting of ingredients and attributes is conducted in order to preserve the ingredient’s meaning. For instance, <em>garlic clove</em> is kept as such and not split up into ingredient (<em>garlic</em>) and attribute (<em>clove</em>) because this would generate two distinct ingredients of which the latter is not accurately present. All words are singularised.</p>
+<p>Second, I calculate relative ingredient frequencies for all ingredients in the respective food cultures. The relative ingredient frequency measures the number of times an ingredient occurs in the recipes of the corresponding food culture in relation to the food culture’s total ingredients. The ingredient frequency is expressed as a percentage. It is therefore a measure of the importance of the ingredient in the respective food culture.</p>
+<p>And third, I classify the ingredients according to the <em>CODEX alimentarius</em> from the Food and Agriculture Organisation (FAO) into 11 food and beverage categories. The classification is undertaken to arrange the heterogenous ingredients into well-structured groups. For the sake of presentation, I slightly modify the category names into shorter versions and combine similar categories.<a href="#fn5" class="footnote-ref" id="fnref5"><sup>5</sup></a></p>
+<h1 id="fcc">Food culture classification</h1>
+<p>It is a challenging task to define a national cuisine. What, for instance, is the definition of Chinese cuisine if the cuisine in the Guangdong Province known as Cantonese cuisine is highly distinct from the Sichuan cuisine in the province of the same name? A similar question can be asked for many other countries or cuisines. A scrupulously adequate definition or classification of a country-specific cuisine does not seem to exist. However, at the global and therefore broader level similarities are more pronounced. In the following, I classify the 11 different cuisines shown in Table <a href="#ss" data-reference-type="ref" data-reference="ss">[ss]</a> into four groups of food cultures with similar culinary characteristics. I define a food culture as a group of cuisines with shared culinary practices, attitudes, and experiences. The classification is inspired by the <span class="citation" data-cites="barilla">Barilla Center for Food and Nutrition (2009)</span>.</p>
+<p><strong><em>Anglo-saxon food culture.</em></strong> I group the American and British cuisines into the Anglo-saxon food culture.<a href="#fn6" class="footnote-ref" id="fnref6"><sup>6</sup></a> <span class="citation" data-cites="levenstein2003revolution">Levenstein (2003, 7:3)</span> prominently notes in the opening lines of his book that &quot;[t]he United States may have won its political independence from Great Britain in 1783, but during the hundred-odd years that followed, Americans never liberated themselves from the British culinary heritage.&quot; Today, the American and British cuisines are both characterised by individualism, pragmatism, and speed <span class="citation" data-cites="barilla">(Barilla Center for Food and Nutrition 2009)</span>. In the case of the US, this is due to the lack of a year-long culinary history, large within and across country migration that complicated the settlement of civilisations and resulted in a lack of local products. All these factors hindered the formation of a strong culinary tradition <span class="citation" data-cites="lang2004food">(Lang and Heasman 2004)</span>.</p>
+<p>England and the USA were both leading forces in the industrial revolution, during which women who were traditionally responsible for the cooking at home were pushed into paid jobs outside of the home. Industrialisation and its technological advancements changed the food production and consumption markedly and resulted in cheap food products. Developments in preservation, mechanisation, and transportation were amongst other things decisive factors that led to more and more outside-of-home food consumption with booming ready-cooked foods for sale <span class="citation" data-cites="laudan2001plea">(Laudan 2001)</span>. <span class="citation" data-cites="goody2012industrial">Goody (2012, 72)</span> even argues that &quot;[t]he British diet [...] went straight ’from medieval barbarity to industrial decadence.’&quot; Although the modern fast-food culture originated in the US, the United Kingdom and Canada were the first countries where American fast-food companies set foot <span class="citation" data-cites="smith2006encyclopedia">(Smith 2006)</span>.<a href="#fn7" class="footnote-ref" id="fnref7"><sup>7</sup></a> Today, the United Kingdom accounts for the largest share of ready-made meals sold in Europe <span class="citation" data-cites="Howard:2012aa">(Howard, Adams, and White 2012)</span>. Many scholars refer to the Western diet when describing the Anglo-saxon food culture. Due to the great influences North American culture has had on Britain over the past century, not least due to the shared language, the Western diet is often equated with industrially produced and cheap food that is frequently consumed outside of home.<a href="#fn8" class="footnote-ref" id="fnref8"><sup>8</sup></a></p>
+<p><strong><em>Mediterranean food culture.</em></strong> The Mediterranean food culture consists of the Greek, Italian, and Spanish cuisines and stands in culinary terms in strong contrast with the aforementioned Anglo-saxon group. All three countries border with the Mediterranean basin, which influences the prevailing Mediterranean climate of mild and moist winters and dry and hot summers. Historians call the basin &quot;’the cradle of society’, because within its geographical borders the whole history of the ancient world took place&quot; <span class="citation" data-cites="altomare2013mediterranean">(Altomare et al. 2013, 449)</span>. The Mediterranean region has a century-long history of exchanges of people, cultures, and food. However, for a prolonged period, Mediterranean people &quot;lived off the riches or poverty of the land&quot;, consumed what was seasonally available and primarily ate &quot;to satisfy [their] hunger&quot; <span class="citation" data-cites="medfood">(Essid 2012, 65)</span>. The pleasure or enjoyment of food was of secondary importance. Today, the Mediterranean diet is globally known and recognised for its beneficial health effects, which are not solely due to Mediterranean ingredients but also stem from cultural and lifestyle elements such as conviviality, seasonality, physical activity and adequate rest <span class="citation" data-cites="bach2011mediterranean">(Bach-Faig et al. 2011)</span>. In 2010 Spain, Greece, Italy, and Morocco successfully inscribed the &quot;Mediterranean diet&quot; on UNESCO’s Representative List of the Intangible Cultural Heritage of Humanity.<a href="#fn9" class="footnote-ref" id="fnref9"><sup>9</sup></a> The diet is defined as &quot;[...] a set of skills, knowledge, rituals, symbols, and traditions concerning crops, harvesting, fishing, animal husbandry, conservation, processing, cooking, and particularly the sharing and consumption of food&quot; <span class="citation" data-cites="unesco">(UNESCO 2013)</span>. The Mediterranean food culture is founded on a long and strong culinary history that combines geographical and climatic factors with qualitative cultural and lifestyle elements.</p>
+<p><strong><em>Oriental mediterranean food culture.</em></strong> The Oriental mediterranean food culture is composed of the Turkish and Moroccan cuisines. Despite being in different geographic and cultural regions, Turkey’s and Morocco’s climate is, to a large extent, Mediterranean <span class="citation" data-cites="heine2004food">(Heine 2004)</span>. Both cuisines feature pronounced Mediterranean traits with similar culinary characteristics as described above (see <span class="citation" data-cites="albala2011food">Albala (2011)</span> and <span class="citation" data-cites="BATU201876">Batu and Batu (2018)</span>). However, what differentiates the Oriental mediterranean from the Mediterranean food culture is the religion. &quot;In the Near and Middle East and North Africa, the ways of eating and drinking have been influenced by climatic, economic, political, and other factors. But cultural factors are of the greatest importance, and among them especially the religious one&quot; <span class="citation" data-cites="heine2004food">(Heine 2004, 3)</span>. The vast majority of people in Turkey and Morocco are Muslims. The Quran, the holy book of all Muslims, gives a few guidelines about culinary practices. Fasting, that is abstaining from food and drink (and smoking) during daytime in the month of Ramadan, and restraining from ’haram’ foods and beverages (unclean/unlawful items such as pork, blood, alcohol, and others) are among the most important culinary principles in Islam <span class="citation" data-cites="heine2004food">(Heine 2004)</span>. Additionally, the concept of hospitality, which is entertaining a guest and serving generous food and drink during the convivial stay, is a tradition that has a long history in Islam. Islamic culinary traditions even have a visible effect on the design of Muslim homes with, for instance, large sofas to receive guests <span class="citation" data-cites="OTHMAN201512">(Othman, Aird, and Buys 2015)</span>. The Oriental mediterranean food culture is therefore a fusion between the Mediterranean diet and Islamic culture. The two Mediterranean food cultures also represent an intermediate geographical element from the Anglo-saxon West to the Asian East that is described below.</p>
+<p><strong><em>Asian food culture.</em></strong> Thai, Vietnamese, Japanese, and Chinese cuisines are grouped together and termed as Asian food culture. The term ’Asian’ does not refer to the Asian continent as a whole, which would incorporate much more than the four cuisines, but only to the geographical Far East and cultural East and Southeast Asia.<a href="#fn10" class="footnote-ref" id="fnref10"><sup>10</sup></a> In China, Japan, and Southeast Asia, a century-old tradition of food as medicine exists in which herbs are consumed as &quot;[...] daily functional foods and as drugs to maintain health and treat disease state&quot; <span class="citation" data-cites="lee2003oriental">(Lee, Itokawa, and Kozuka 2003, 2)</span>. China, the world’s oldest continuous civilisation has had the biggest cultural influence in the region and established the principles of Taoism in daily life, which influenced the food culture in a physical and psychological manner. &quot;It concerned itself with the nourishment of the body, prevention of disease, and the search for longevity&quot; <span class="citation" data-cites="brown2006china">(Brown and Brown 2006, 136)</span>. Vegetarianism is wide-spread in Taoism. The Chinese phrase &quot;grocery shopping&quot; literally translates into &quot;buy vegetables&quot; <span class="citation" data-cites="zai2015taoism">(Zai 2015)</span>. The Asian food culture geographically refers to the Far East and combines food with physical, mental, and spiritual health.</p>
+ 
+<p>I intentionally refrain from using recipes from other important world cuisines, such as the French, Mexican, Indian and Caribbean, although the data is available from <em>BBCGF</em>, because of the difficulty of meaningfully adding them to one of the above-described groups or form new groups of at least two different cuisines.<a href="#fn11" class="footnote-ref" id="fnref11"><sup>11</sup></a></p>
+
+<div id="myModal" class="modal">
+
+  <!-- The Close Button -->
+  <span class="close">&times;</span>
+
+  <!-- Modal Content (The Image) -->
+  <img class="modal-content" id="img01">
+
+  <!-- Modal Caption (Image Text) -->
+  <div id="myCaption">Restaurant cuisines accros Switzerland (click to enlarge!)</div>
+</div>
+
+<figure>
+  <a href='/files/ingredient_networks/obese_vs_calories.png'>
+  <img src='/files/ingredient_networks/obese_vs_calories.png' width="1500" height="1200">
+  </a>
+    <div class="text-center">
+      <figcaption>Figure 1: Share of obese people and calories per serving (click to enlarge).</figcaption>
+    </div>
+</figure> 
+ 
+ <p>Figure 1 shows the relationship between the share of obese people and the average energy intensity in home-cooked recipes for the four defined food cultures. Calorie data comes from <em>BBCGF</em> and obesity data from the World Health Organisation (WHO).<a href="#fn12" class="footnote-ref" id="fnref12"><sup>12</sup></a> Although not causal, the figure shows with a Spearman rank correlation coefficient of 0.54 a clear positive correlation between the recipe’s energy intensity and the share of obese people among the food cultures. The culinary similarity of the food cultures is also reflected in the energy intensity of their recipes and the prevalence of obesity.</p>
+<p>The recipes of the Asian food culture feature the lowest energy levels, and the obesity shares are considerably lower compared to the other food cultures. The Mediterranean food cultures form an intermediate group in terms of prevalence of obesity and energy intensity in the recipes. The Anglo-saxon food culture displays the highest share of obese people and the richest recipes in terms of energy. While other factors play important roles in determining obesity, such as the state of economic development or the cultural meaning of fattiness, Figure 1 aims at illustrating the positive relationship between the energy intensity of home-cooked recipes and the prevalence of obesity.</p>
+<h1 id="res">Results</h1>
+<p>This section shows the results of the recipe analysis. Subsection <a href="#part1" data-reference-type="ref" data-reference="part1">4.1</a> reports energy distributions and subsection <a href="#part2" data-reference-type="ref" data-reference="part2">4.2</a> shows the nutritional content of the recipes at the food culture level. Subsection <a href="#part3" data-reference-type="ref" data-reference="part3">4.3</a> analyses the ingredients and ingredient pairings in each food culture individually.</p>
+<h2 id="part1">Energy distributions</h2>
+ <p>In the world of food, the unit of energy is known as kilocalorie (kcal) and defined as the amount of energy needed to raise 1 kg of water from 15 to 16°C <span class="citation" data-cites="buchholz2004calorie">(Buchholz and Schoeller 2004)</span>. The energy that is available to the body from consuming food is the metabolisable energy, that is the energy liberated from the combustion of food and not the gross energy, that is the energy available to the body from consumption of that food <span class="citation" data-cites="buchholz2004calorie">(Buchholz and Schoeller 2004)</span>. Some food items that are ingested are not digested, and energy is thus not metabolised but excreted with the faeces. Metabolisable energy is much more difficult to determine than gross energy.<a href="#fn13" class="footnote-ref" id="fnref13"><sup>13</sup></a> Because of this difficulty, nutritional labels on food items approximate the true values for the purpose of consumer information <span class="citation" data-cites="Livesey_2001">(Livesey 2001)</span>. The energy measure in this study is the metabolisable energy, and the focus in this section is therefore more on relative, that is cross-cultural, as opposed to absolute statements.</p>
+
+ <div id="myModal" class="modal">
+
+  <!-- The Close Button -->
+  <span class="close">&times;</span>
+
+  <!-- Modal Content (The Image) -->
+  <img class="modal-content" id="img01">
+
+  <!-- Modal Caption (Image Text) -->
+  <div id="myCaption">Restaurant cuisines accros Switzerland (click to enlarge!)</div>
+</div>
+
+<figure>
+  <a href='/files/ingredient_networks/lonely_scatter.png'>
+  <img src='/files/ingredient_networks/lonely_scatter.png' width="1500" height="1200">
+  </a>
+    <div class="text-center">
+      <figcaption>Figure 2: Calorie distributions (click to enlarge).</figcaption>
+    </div>
+</figure>
+ 
+ <p>Figure 2 shows metabolisable energy boxplots for the four food cultures. The figure shows that the metabolisable energy distributions are different across the food cultures. The mean is shown in the black square, while the median is reported in the white square. Red circles are outliers.<a href="#fn14" class="footnote-ref" id="fnref14"><sup>14</sup></a> They are not excluded from the analysis because they do not skew the mean far away from the median. An average (median) Anglo-saxon recipe features with 497 (472) kilocalories per serving 1.4 (1.4) times more calories than recipes in the Asian food culture with 364 (331) kilocalories per serving. An average (median) recipe in the Mediterranean food culture is with 458 (437) calories per serving 1.2 (1.1) times slightly more energy-loaded compared to an average (median) recipe in the Oriental Mediterranean food culture with 393 (384) calories per serving. Just one serving of an average recipe in the Anglo-saxon food culture features 22.0% of the daily energy recommendation, while it is 20.3% in the Mediterranean, 17.4% in the Oriental mediterranean and 16.1% in the Asian food cultures.<a href="#fn15" class="footnote-ref" id="fnref15"><sup>15</sup></a></p>
+<p>The Wilcoxon Rank Sum Test confirms at the 5% significance level that the Anglo-saxon energy distribution lies statistically higher than the Asian (p-value = 3.112e<sup>-6</sup>) and the Oriental mediterranean (p-value = 0.002) but fails to reject H<span class="math inline"><em></em><sub>0</sub></span> of equal distributions for Mediterranean recipes (p-value = 0.393). Similarly, the Mediterranean energy distribution lies statistically higher than the Asian (p-value = 1.769e<sup>-5</sup>), but not higher than the Oriental mediterranean (p-value = 0.014). Figure 2 also shows that the box, which is the 25th to the 75th percentile, lies considerably higher for recipes in the Anglo-saxon and Mediterranean food cultures compared to the Oriental mediterranean and Asian food cultures.</p>
+<h2 id="part2">Nutrition characteristics</h2>
+<p>Figure 3 shows the nutrition characteristics of the four food cultures. Panel A reports absolute mean values of the main macronutrients, while Panel B displays percentage differences from the WHO intake goals.</p>
+
+ <div id="myModal" class="modal">
+
+  <!-- The Close Button -->
+  <span class="close">&times;</span>
+
+  <!-- Modal Content (The Image) -->
+  <img class="modal-content" id="img01">
+
+  <!-- Modal Caption (Image Text) -->
+  <div id="myCaption">Restaurant cuisines accros Switzerland (click to enlarge!)</div>
+</div>
+
+<figure>
+  <a href='/files/ingredient_networks/heatmaps_new.png'>
+  <img src='/files/ingredient_networks/heatmaps_new.png' width="1500" height="1200">
+  </a>
+    <div class="text-center">
+      <figcaption>Figure 3: Nutrition characteristics (click to enlarge).</figcaption>
+    </div>
+</figure>
+
+<p>Panel A reports higher nutritional values in darker colors. Carbohydrates constitute the most significant class of macronutrients in all food cultures. It’s content ranges on average between 29.4 grams per serving in the Oriental mediterranean to 38.8 grams per serving in the Anglo-saxon food culture. However, the share of sugars from carbs, that is simple carbohydrates,<a href="#fn16" class="footnote-ref" id="fnref16"><sup>16</sup></a> is with 43.8%<a href="#fn17" class="footnote-ref" id="fnref17"><sup>17</sup></a> considerably higher in the Anglo-saxon food culture compared to the others. The Oriental Mediterranean food culture features a share of sugars from carbs of 38.4%, the Mediterranean 27.3%, and the Asian 27.8%. Recipes from the Anglo-saxon food culture consist in absolute terms on average of 1.7 times more sugars per serving compared to the other three food cultures.<a href="#fn18" class="footnote-ref" id="fnref18"><sup>18</sup></a> As for carbohydrates, the pattern looks similar for fat. The Anglo-saxon food culture uses with 27.2 grams 1.3 times more fat than the Mediterranean (24.5 grams), Oriental mediterranean (20.6), and Asian (15.1) food cultures. Of these fats, the recipes in the Anglo-saxon food culture show the highest share of saturated fats (40.8%). The share of saturated fats is lower in the recipes from the Mediterranean food cultures (37.9% and 31.5%, respectively) and with 27.1% the lowest in Asian recipes. The average protein amount is similar in all four food cultures and fluctuates minimally around 24.3 grams per recipe.<a href="#fn19" class="footnote-ref" id="fnref19"><sup>19</sup></a></p>
+
+<p>Panel B shows the percentage point difference of energy derived from each energy-supplying macronutrient in relation to the intake goal from the WHO.<a href="#fn20" class="footnote-ref" id="fnref20"><sup>20</sup></a> I calculate therefore the energy derived from protein, carbs, sugar, fat and saturated fat as shown in Appendix <a href="#a1" data-reference-type="ref" data-reference="a1">6.1</a> and subtract this percentage from the midpoint of WHO’s intake goal interval. Therefore, a positive number is below the goal (blue), while a negative number (red) exceeds the target. Similar to <span class="citation" data-cites="Trattner_2017">Trattner, Elsweiler, and Howard (2017)</span> Panel B reports unbalanced and thus unhealthy recipes. The panel shows that all food cultures derive too much energy from protein and fat, yet the degree varies among the food cultures. The Asian food culture depicts the largest discrepancy in terms of energy from protein, while the Anglo-saxon food culture lies the furthest away from WHO’s goal for fat. In fact, the two categories show an inverse relationship. The Asian food culture meets WHO’s target for saturated fat. The Anglo-saxon, Mediterranean, and Oriental mediterranean food cultures miss the target by 10.1, 8.3, and 4.9 percentage points, respectively. Sugar is the most accurate energy-supplying macronutrient. While the Mediterranean (1.8) and Asian food (0.1) cultures are below the threshold, the Oriental mediterranean (-1.5) and Anglo-saxon (-3.7) food cultures miss it marginally.</p>
+<p>The WHO calculates the energy goal from carbohydrates as the residual &quot;[...] after taking into account that consumed as protein and fat&quot; <span class="citation" data-cites="world2003diet">(World Health Organization 2003, 916:56)</span>. Because the food cultures report too much energy stemming from protein and fat, the energy that comes from carbohydrates must lie below the threshold. Panel B shows that all food cultures derive too little energy from carbohydrates. The Anglo-saxon and both Mediterranean food cultures offset this lack of energy with energy from fat, while the Asian food culture derives a large share of energy from protein.</p>
+<h2 id="part3">Ingredient networks</h2>
+<p>The following sections show ingredient networks of the four food cultures. The networks show the 300 most frequent ingredient pairings of the respective food cultures. I report the relative ingredient frequencies in parentheses as defined in subsection <a href="#proc" data-reference-type="ref" data-reference="proc">2.2</a> and divide the range of these ingredient frequencies into six intervals. The node size represents the interval in which they fall. The first interval is represented with the smallest node, while the sixth interval is shown with the largest node. Ingredients that are above the interval median are shown in bold capital letters. They are identified as the most important food culture specific ingredients. The larger and darker the edge between two nodes, the more often these two ingredients jointly occur in the recipes of the respective food culture.</p>
+<h3 id="anglo-saxon-food-culture">Anglo-saxon food culture</h3>
+<p>Figure 4 reports ingredient frequencies and ingredient pairings in recipes from the Anglo-saxon food culture. Sugar is with 6% the most frequently used ingredient, followed by flour (4.9%) and butter (4.3%). Apparent from Figure 4 is also the large joint occurrence of sugar, flour, and butter in the recipes.</p>
+
+  <div id="myModal" class="modal">
+  <!-- The Close Button -->
+  <span class="close">&times;</span>
+  <!-- Modal Content (The Image) -->
+  <img class="modal-content" id="img01">
+  <!-- Modal Caption (Image Text) -->
+  <div id="myCaption">Restaurant cuisines accros Switzerland (click to enlarge!)</div>
+</div>
+<figure>
+  <a href='/files/ingredient_networks/network_Anglo-saxon_gastronomica.png'>
+  <img src='/files/ingredient_networks/network_Anglo-saxon_gastronomica.png' width="1500" height="1200">
+  </a>
+    <div class="text-center">
+      <figcaption>Figure 4: Anglo-saxon ingredients (click to enlarge).</figcaption>
+    </div>
+</figure> 
+ 
+<p>The main meat is chicken with 1.8%, followed by bacon with 1.4%. Red meat is with 4.3% dominant to white meat with 1.8%. Fish-based ingredients are not present. Condiments are numerously present but at low frequencies. The main condiments are garlic cloves (2.7%), paprika (1.6%), and thyme (1.4%). The most important ingredients of the fruits and vegetables category are onions (3.7%), carrots (1.2%), and potatoes (1.2%). Milk is the dominant dairy product (2.4%), followed by cream (1.7%). Cheddar, a typical Anglo-saxon cheese, dominates with 0.5% generic cheese with 0.4%.</p>
+<p>Hot-dogs (0.3%), burgers (0.3%), mayonnaise (1%), tomato ketchup (0.4%), and barbecue sauce (0.3%) are ingredients that are all pre-processed and strongly associated with the Anglo-saxon fast-food culture. 9.5% of the ingredients are fats and oils, of which 4.3% are from butter.</p>
+<h3 id="mediterranean-food-culture">Mediterranean food culture</h3>  
+<p>Figure 5 reports the ingredient network for the Mediterranean food culture. Unsurprisingly, olive oil is with 6.3% the most frequently used ingredient, followed by garlic cloves (5.4%), tomatoes (4.3%), and onions (3.7%). Other frequently used ingredients are sugar (2.9%), butter (2.9%), and parsley (2.7%). In the Mediterranean food culture, olive oil is the key ingredient. It is combined with garlic cloves, onions, tomatoes, and parsley. The butter-flour-sugar triplet that is very pronounced in the Anglo-saxon food culture is also visible, although at a much lower frequency.</p>
+
+  <div id="myModal" class="modal">
+  <!-- The Close Button -->
+  <span class="close">&times;</span>
+  <!-- Modal Content (The Image) -->
+  <img class="modal-content" id="img01">
+  <!-- Modal Caption (Image Text) -->
+  <div id="myCaption">Restaurant cuisines accros Switzerland (click to enlarge!)</div>
+</div>
+<figure>
+  <a href='/files/ingredient_networks/network_Mediterranean_gastronomica.png'>
+  <img src='/files/ingredient_networks/network_Mediterranean_gastronomica.png' width="1500" height="1200">
+  </a>
+    <div class="text-center">
+      <figcaption>Figure 5: Mediterranean ingredients (click to enlarge).</figcaption>
+    </div>
+</figure>  
+ 
+ <p>Wine (1.9% of which 0.3% from Marsala) is frequently used as an ingredient and many cheese products are present in the dairy section (Ricotta (0.4%), Parmesan (2%), Mozzarella (0.4%), Mascarpone (0.3%), Gruyère (0.4%) and Feta (1.2%)).</p>
+<p>Lamb (1.3%) is the most frequently used meat, followed by chicken (1%). Prawns (0.3%) appear, and there is the mentioning of fish stock (0.2%) as a condiment, although both at low frequencies. Thyme (1.9%), oregano (1%), rosemary (1%), bay leaves (1.2%), and saffron (0.2%) are traditional Mediterranean spices. Olives (1.5%) and potatoes (1.5%) also appear as important fruits and vegetables. Red meat (3%) is dominant to white meat or fish (1.3%). 9.8% of the ingredients are fats and oils, of which olive oil is the most frequently used. Plant-based oils and fats are dominant (6.9%) to animal fat (2.9%).</p>
+ 
+ <h3 id="oriental-mediterranean-food-culture">Oriental mediterranean food culture</h3>
+<p>Figure 6 reports the ingredients in the recipes of the Oriental mediterranean food culture. Again, olive oil is with 7.1% the dominant ingredient, followed by garlic gloves (5.0%) and onions (5.1%). Condiments are dominant ingredients in the Oriental mediterranean food culture, such as coriander (4.7%), cinnamon (3.1%), and cumin (3.5%). Similar to the Mediterranean food culture, olive oil builds the basis in the Oriental mediterranean food culture, and it is paired with lots of condiments and onions. In general, the Mediterranean and Oriental mediterranean food cultures depict similar ingredient pairing patterns. However, the butter-flour-sugar triplet is barely noticeable.</p>
+
+  <div id="myModal" class="modal">
+  <!-- The Close Button -->
+  <span class="close">&times;</span>
+  <!-- Modal Content (The Image) -->
+  <img class="modal-content" id="img01">
+  <!-- Modal Caption (Image Text) -->
+  <div id="myCaption">Restaurant cuisines accros Switzerland (click to enlarge!)</div>
+</div>
+<figure>
+  <a href='/files/ingredient_networks/network_Oriental_mediterranean_gastronomica.png'>
+  <img src='/files/ingredient_networks/network_Oriental_mediterranean_gastronomica.png' width="1500" height="1200">
+  </a>
+    <div class="text-center">
+      <figcaption>Figure 6: Oriental mediterranean ingredients (click to enlarge).</figcaption>
+    </div>
+</figure>  
+ 
+<p>Honey (2.2%) is the primary sweetener, followed by sugar (1.9%). Pomegranate molasses (0.4%) is strongly tied to Middle Eastern and North African culinary culture. Couscous (1.7%) is the main cereal, pitta bread (1%) the main bakery ware, and lamb (2.9%) the main meat. Apparent from Figure 6 is also the unimportance of dairy products. Although yoghurt is with 2.4% quite frequently used, it is together with feta (1%) the only dairy product. Saffron (0.8%), ras-el-hanout (1%), and harissa (1.4%) are typical Oriental mediterranean condiments. 8.1% of the ingredients are fats and oils, of which olive oil is the most frequently used.</p>
+<h3 id="asian-food-culture">Asian food culture</h3>
+<p>Figure 7 shows the ingredients in recipes from the Asian food culture. The most frequently used ingredients are soya sauce with 5.5%, chillies with 4.5%, and spring onions with 4.3%. The figure shows that condiments are the dominant ingredients in the Asian food culture. Other important condiments are ginger (4.1%), garlic gloves (3.8% ), and coriander (2.7%). Next to the dominant presence of soya sauce are other sauces such as oyster sauce (0.6%), fish sauce (1.9%), and chilli sauce (0.7%) as condiments. White meat or fish (4.3%) dominate the little use of red meat (1.3%). The main sweetener is sugar with 4.1%, followed by honey with 0.6%. Remarkable is the pairing of sugar with soya sauce, spring onions, vegetable oil, ginger, garlic cloves, fish sauce, and chillies.</p>
+
+   <div id="myModal" class="modal">
+  <!-- The Close Button -->
+  <span class="close">&times;</span>
+  <!-- Modal Content (The Image) -->
+  <img class="modal-content" id="img01">
+  <!-- Modal Caption (Image Text) -->
+  <div id="myCaption">Restaurant cuisines accros Switzerland (click to enlarge!)</div>
+</div>
+<figure>
+  <a href='/files/ingredient_networks/network_Oriental_gastronomica.png'>
+  <img src='/files/ingredient_networks/network_Oriental_gastronomica.png' width="1500" height="1200">
+  </a>
+    <div class="text-center">
+      <figcaption>Figure 7: Asian ingredients (click to enlarge).</figcaption>
+    </div>
+</figure> 
+
+ 
+ <p>Fats and oils are diverse but little used. 7% of the ingredients are fats and oils, of which vegetable oil (2.5%) is the most frequently used oil. Sunflower oil (1.6%), sesame oil (1.5%), and groundnut oil (0.8%) are other used fats and oils. Olive oil is with 0.6% present but rarely used. The use of water chestnut (0.3%) and lime (lime juice (1.2%), lime zest (0.5%), and lime (1%)) is strongly associated with the Asian food culture since both foods are native to Asia. Figure 7 also shows the absence of dairy products and bakery wares. Butter is not used as fat. A potential dairy substitute is coconut milk (0.6%), although used at little frequency. Rice-based ingredients are markedly present in many categories. Rice noodles (1.4%), rice (0.8%), sushi rice (0.6%) and jasmine rice (0.3%) dominate flour (0.6%) and cornflour (0.9%) as cereals. Rice wine (0.7%) and saké (0.3%) appear as beverages. Rice wine vinegar (0.8%), rice vinegar (0.7%), and mirin (1%) are used as condiments.</p>
+<h1 id="dis">Discussion</h1>
+<p>The previous section has shown that the recipes of the four food cultures differ in terms of nutritional content as well as in the use and pairing of their ingredients. The underlying food culture’s geography, history, and philosophy are visible. In terms of healthiness it matters whether sugar is combined with flour and butter, or olive oil is combined with garlic gloves, onions and tomatoes or whether soya sauce is paired with spring onions and Asian spices.</p>
+<p>The dominant prevalence of sugar, for instance, is not surprising in the Anglo-saxon food culture. <span class="citation" data-cites="sidney1986sweetness">Mintz (1986)</span> argues that sugar was the fuel for the industrial revolution. While at first considered a pricy luxury good that was consumed only among the nobility, slave trade to the Atlantic Islands enabled production to increase markedly, and prices to drop sharply. By the mid-eighteenth century, the cheap calories reached Britain’s working classes and changed their diets and lifestyles. The annual sugar consumption per capita rose in Britain by a factor of 22.5 in just 196 years.<a href="#fn21" class="footnote-ref" id="fnref21"><sup>21</sup></a> Some hundred years later, in the America of the 1860s, <span class="citation" data-cites="stowe1971american">Beecher and Beecher Stowe (1869, 133)</span> noted that &quot;the unhealthiest foods are those resulting from poor cooking, such as heavy, sour bread, sweets, pastry and other dishes based on cooked mixtures of flour and fats. The fewer the mixtures in the kitchen, the healthier the food.&quot; Figures3 and 4 precisely depict this unhealthiness in contemporaneous home-cooked Anglo-saxon recipes. The fuel of the industrial revolution is still present in today’s Anglo-saxon recipes.</p>
+<p>The Anglo-saxon recipes feature, on average, the highest absolute carbohydrate, sugar, fat and saturated fat levels and are furthest away from WHO’s energy intake goals of these energy-supplying macronutrients. In addition, the home-cooked Anglo-saxon recipes show a considerable amount of ingredients that are processed and associated with the fast-food culture. Fast food is known to be high in saturated fats <span class="citation" data-cites="paeratakul2003fast">(Paeratakul et al. 2003)</span>. The <span class="citation" data-cites="aha">American Heart Association (2015)</span> recommends about 13 grams of saturated fat per day. On average, the Anglo-saxon recipes consist of 11.1 grams of saturated fats per serving. This high value of saturated fats nearly meets the daily recommendation of the AHA in just one serving (85.3% of the daily recommendation). Butter and dairy in general, as well as animal fats from red meat, are high in saturated fatty acids. Fat is the biggest calorie contributor in the recipes (c.f. Appendix <a href="#a1" data-reference-type="ref" data-reference="a1">6.1</a>), and the recipes of the Anglo-saxon food culture are consequently the most energy-dense.</p>
+<p>The Mediterranean food culture that is known for its beneficial health effects displays this partly in the used ingredients. <span class="citation" data-cites="bach2011mediterranean">Bach-Faig et al. (2011, 2274)</span> state that the Mediterranean diet is &quot;[...] rich in plant foods (cereals, fruits, vegetables, legumes, tree nuts, seeds and olives), with olive oil as the principal source of added fat, along with high to moderate intakes of fish and seafood, moderate consumption of eggs, poultry and dairy products (cheese and yoghurt), low consumption of red meat and a moderate intake of alcohol (mainly wine during meals).&quot; Many condiments that require hot and dry Mediterranean summer climate are used (thyme, rosemary, saffron, oregano, etc.). In line with <span class="citation" data-cites="buzina1991diet">Buzina, Subotičanec, and Šarić (1991)</span>, plant-based oils and fats are dominant to animal fat. Olive oil is the main fat. It is mainly composed of monounsaturated fatty acids (particularly oleic acid), which may reduce the risk of coronary heart disease. However, unlike stated by <span class="citation" data-cites="bach2011mediterranean">Bach-Faig et al. (2011)</span>, Figure 5 shows that red meat is dominant to white meat or fish. Recipes are energy-dense and high in fat, particularly saturated fats. Both the Anglo-saxon and Mediterranean food cultures make extensive use of dairy products.</p>
+<p>The Oriental mediterranean food culture depicts similarities with the Mediterranean food culture. However, unlike in the Mediterranean food culture, Figure 6 depicts the absence of’ haram’ food items in the Oriental mediterranean kitchen, such as pork meat or alcohol. Wine vinegar is present at a low frequency whose degree of ’unlawfulness’ is debated because of the alcoholic origin (wine) of the nonalcoholic end product (vinegar). <span class="citation" data-cites="albala2011food">Albala (2011)</span> notes that the Moroccan cuisine is known for the use of many spices, particularly coriander and ras-el-hanout, which are both found in the recipes.</p>
+<p>The Asian food culture that strongly associates food with medicine depicts the healthiest, that is the least energy-dense and the most nutritionally balanced recipes according to the WHO, out of the four food cultures under investigation. White meat and fish dominate red meat. Fats and oils are plant-based. Dairy products are not used. The Asian food culture depicts a relatively high use of table sugar as sweetener, which has a longstanding history as a culinary and medical commodity in East Asia. At the same time, the intake of foods high in added sugar has markedly increased throughout Asia since the 1990s <span class="citation" data-cites="Zhai_2013">(Zhai et al. 2013)</span>. Western fast-food chains started to multiply, and the consumption of such Western foods in the public sphere has since then been associated with social status and reward. In China, for example, &quot;[...] when a child has good school performance, parents may take them to a western fast food restaurant as a reward&quot; <span class="citation" data-cites="MA2015195">(Ma 2015, 197)</span>. Figure 7 shows no signs of such a ’westernisation’ in the private sphere. Yet, since taste is learnt, moving towards a Western diet in the private sphere would be an unfavorable development.</p>
+<p>There are global ingredients such as sugar, chillies, chicken and chicken stock, flour, carrots, eggs, garlic cloves, olive oil, onions, and tomato purée that appear in every food culture. Yet, despite the global foodways today, the ingredient networks also reveal that the majority of the used ingredients are food culture specific.<a href="#fn22" class="footnote-ref" id="fnref22"><sup>22</sup></a> Home-cooking is probably the most powerful expression of the identification with a food culture. Particularly people in the diaspora identify themselves through ’cooking as at home’ with their origins as displayed by <span class="citation" data-cites="beyers2008creating">Beyers (2008)</span> for Italian immigrants in Belgium and by <span class="citation" data-cites="law2001home">Law (2001)</span> for Filipino women in Hong Kong. While changes in food cultures happen more easily in the public sphere by establishing immigrant restaurants, changing home-cooking behaviour and thus changing the private sphere of a food culture seems to be a protracted process which has led to relatively stable conditions in the area of home-cooking.</p>
+<p>Therefore, I argue that some food cultures are more prone to an obesogenic environment than others because of the used ingredients in the most elementary peculiarity of a food culture: home-cooking.</p>
+<h1 id="con">Conclusion</h1>
+<p>The paper has shown that home-cooked recipes from <em>BBCGF</em> make use of ingredients that are tied to the underlying food culture. Under the assumption that the majority of people in a food culture cook ’local’ recipes, it can be argued that the likelihood of obesity is higher in some, while not in other food cultures due to different energy and nutrition profiles of the recipes. More concretely, this means that the Anglo-saxon food culture with the highest calorie, carbohydrate, sugar, fat, and saturated fat levels is more prone to a higher share of obese people even if hypothetically all people would engage in home-cooking. The likelihood of obesity is lower in the Mediterranean and Oriental mediterranean and the lowest in the Asian food culture. Home-cooking is therefore part of the obesogenic environment, and the food culture endemic characteristics need to be considered when pushing home-cooking as an answer to the obesity pandemic. The underlying food culture may act as a point of departure for a healthy home-cooking.</p>
+<p>The world is witnessing shifts that will be impacting food cultures and, therefore, home-cooking in the future <span class="citation" data-cites="barilla2">(Barilla Center for Food and Nutrition 2012)</span>. Demographic changes (such as the aging of populations in the West, growing populations in developing countries, increasing numbers of single-member nuclear families or migration), new geopolitical balances (such as movement of political and cultural power from West to East or the development of mega-cities) and technological advancements in genetics, robotics, information processing and nanotechnology are changing the society and the landscape of food production and consumption. Questions as to what extent these shifts affect food cultures and their embedded home-cooking practices are vital to future research.</p>
+
+
+
+
+
+
+
+<h1 id="appendices" class="unnumbered unnumbered">Appendices</h1>
+
+<h2 id="a1">Deriving energy from macronutrients</h2>
+<p>In nutrition studies, the prominent Atwater general factors have been widely used to calculate metabolisable energy in diets. The factors state that the human body receives out of 1 gram protein, fat or carbohydrates 4, 9 or 4 kilocalories of metabolisable energy, respectively <span class="citation" data-cites="buchholz2004calorie">(Buchholz and Schoeller 2004)</span>. I therefore multiply in Table A1 the amount of protein, fat, and carbohydrates with their respective Atwater general factor to receive the metabolisable energy per macronutrient and put them in relation with the energy intensity of the recipe. The <em>Test</em> column is the sum of the shares and confirms the approach.</p>
+
+ <p>
+<img src="/files/ingredient_networks/tab2_app.png" width = "800" alt> <center><em>Table 1: Energy calculation</em></center>
+</p>
+
+<div id="refs" class="references">
+<div id="ref-Ahn_2011">
+<p>Ahn, Yong-Yeol, Sebastian E. Ahnert, James P. Bagrow, and Albert-László Barabási. 2011. “Flavor Network and the Principles of Food Pairing.” <em>Scientific Reports</em> 1 (1). <a href="https://doi.org/10.1038/srep00196" class="uri">https://doi.org/10.1038/srep00196</a>.</p>
+</div>
+<div id="ref-albala2011food">
+<p>Albala, Ken. 2011. <em>Food Cultures of the World Encyclopedia</em>. Vol. 2. ABC-CLIO.</p>
+</div>
+<div id="ref-altomare2013mediterranean">
+<p>Altomare, Roberta, Francesco Cacciabaudo, Giuseppe Damiano, Vincenzo Davide Palumbo, Maria Concetta Gioviale, Maurizio Bellavia, Giovanni Tomasello, and Attilio Ignazio Lo Monte. 2013. “The Mediterranean Diet: A History of Health.” <em>Iranian Journal of Public Health</em> 42 (5): 449.</p>
+</div>
+<div id="ref-aha">
+<p>American Heart Association. 2015.</p>
+</div>
+<div id="ref-bach2011mediterranean">
+<p>Bach-Faig, Anna, Elliot M Berry, Denis Lairon, Joan Reguant, Antonia Trichopoulou, Sandro Dernini, F Xavier Medina, et al. 2011. “Mediterranean Diet Pyramid Today. Science and Cultural Updates.” <em>Public Health Nutrition</em> 14 (12A): 2274–84.</p>
+</div>
+<div id="ref-barilla">
+<p>Barilla Center for Food and Nutrition. 2009.</p>
+</div>
+<div id="ref-barilla2">
+<p>———. 2012.</p>
+</div>
+<div id="ref-BATU201876">
+<p>Batu, Ali, and Heysem S. Batu. 2018. “Historical Background of Turkish Gastronomy from Ancient Times Until Today.” <em>Journal of Ethnic Foods</em> 5 (2): 76–82. <a href="https://doi.org/https://doi.org/10.1016/j.jef.2018.05.002" class="uri">https://doi.org/https://doi.org/10.1016/j.jef.2018.05.002</a>.</p>
+</div>
+<div id="ref-stowe1971american">
+<p>Beecher, Catherine E, and Harriet Beecher Stowe. 1869. <em>The American Woman’s Home: Or, Principles of Domestic Science: Being a Guide to the Formation and Maintenance of Economical, Healthful, Beautiful, and Christian Homes</em>. New York: J. B. Ford; Company.</p>
+</div>
+<div id="ref-beyers2008creating">
+<p>Beyers, Leen. 2008. “Creating Home: Food, Ethnicity and Gender Among Italians in Belgium Since 1946.” <em>Food, Culture &amp; Society</em> 11 (1): 7–27.</p>
+</div>
+<div id="ref-brown2006china">
+<p>Brown, Ju, and John Brown. 2006. <em>China, Japan, Korea: Culture and Customs</em>. BookSurge Publishing.</p>
+</div>
+<div id="ref-buchholz2004calorie">
+<p>Buchholz, Andrea C, and Dale A Schoeller. 2004. “Is a Calorie a Calorie?” <em>The American Journal of Clinical Nutrition</em> 79 (5): 899S–906S.</p>
+</div>
+<div id="ref-buzina1991diet">
+<p>Buzina, R, K Subotičanec, and M Šarić. 1991. “Diet Patterns and Health Problems: Diet in Southern Europe.” <em>Annals of Nutrition and Metabolism</em> 35 (Suppl. 1): 32–40.</p>
+</div>
+<div id="ref-Cutler_2003">
+<p>Cutler, David M, Edward L Glaeser, and Jesse M Shapiro. 2003. “Why Have Americans Become More Obese?” <em>Journal of Economic Perspectives</em> 17 (3): 93–118. <a href="https://doi.org/10.1257/089533003769204371" class="uri">https://doi.org/10.1257/089533003769204371</a>.</p>
+</div>
+<div id="ref-10.2307/2084250">
+<p>Detweiler, Frederick G. 1938. “The Anglo-Saxon Myth in the United States.” <em>American Sociological Review</em> 3 (2): 183–89. <a href="http://www.jstor.org/stable/2084250" class="uri">http://www.jstor.org/stable/2084250</a>.</p>
+</div>
+<div id="ref-dupont1994daily">
+<p>Dupont, Florence. 1994. <em>Daily Life in Ancient Rome</em>. Wiley-Blackwell.</p>
+</div>
+<div id="ref-medfood">
+<p>Essid, Mohamed Yassine. 2012. “Chapter 2. History of Mediterranean Food.” In <em>MediTERRA 2012 (English)</em>. Presses de Sciences Po.</p>
+</div>
+<div id="ref-c868f465a1bb47a6a2618ff1f4ee28d6">
+<p>Floros, John D., Rosetta Newsome, William Fisher, Gustavo V. Barbosa-Cánovas, Hongda Chen, C. Patrick Dunne, J. Bruce German, et al. 2010. “Feeding the World Today and Tomorrow: The Importance of Food Science and Technology.” <em>Comprehensive Reviews in Food Science and Food Safety</em> 9 (5): 572–99. <a href="https://doi.org/10.1111/j.1541-4337.2010.00127.x" class="uri">https://doi.org/10.1111/j.1541-4337.2010.00127.x</a>.</p>
+</div>
+<div id="ref-goody2012industrial">
+<p>Goody, Jack. 2012. “Industrial Food: Towards the Development of a World Cuisine.” In <em>Food and Culture</em>, 86–104. Routledge.</p>
+</div>
+<div id="ref-heine2004food">
+<p>Heine, Peter. 2004. <em>Food Culture in the Near East, Middle East, and North Africa</em>. Greenwood Publishing Group.</p>
+</div>
+<div id="ref-Howard:2012aa">
+<p>Howard, Simon, Jean Adams, and Martin White. 2012. “Nutritional Content of Supermarket Ready Meals and Recipes by Television Chefs in the United Kingdom: Cross Sectional Study.” <em>BMJ</em> 345.</p>
+</div>
+<div id="ref-Hruby_2016">
+<p>Hruby, Adela, JoAnn E. Manson, Lu Qi, Vasanti S. Malik, Eric B. Rimm, Qi Sun, Walter C. Willett, and Frank B. Hu. 2016. “Determinants and Consequences of Obesity.” <em>American Journal of Public Health</em> 106 (9): 1656–62. <a href="https://doi.org/10.2105/ajph.2016.303326" class="uri">https://doi.org/10.2105/ajph.2016.303326</a>.</p>
+</div>
+<div id="ref-Kelishadi_2014">
+<p>Kelishadi, Roya. 2014. “Health Impacts of Obesity.” <em>Pakistan Journal of Medical Sciences</em> 31 (1). <a href="https://doi.org/10.12669/pjms.311.7033" class="uri">https://doi.org/10.12669/pjms.311.7033</a>.</p>
+</div>
+<div id="ref-lang2004food">
+<p>Lang, Tim, and Michael Heasman. 2004. “Food Wars: The Global Battle for Mouths.” <em>Minds and Markets</em> 379.</p>
+</div>
+<div id="ref-laudan2001plea">
+<p>Laudan, Rachel. 2001. “A Plea for Culinary Modernism: Why We Should Love New, Fast, Processed Food.” <em>Gastronomica</em> 1 (1): 36–44.</p>
+</div>
+<div id="ref-law2001home">
+<p>Law, Lisa. 2001. “Home Cooking: Filipino Women and Geographies of the Senses in Hong Kong.” <em>Ecumene</em> 8 (3): 264–83.</p>
+</div>
+<div id="ref-lee2003oriental">
+<p>Lee, Kuo-Hsiung, Hideji Itokawa, and Mutsuo Kozuka. 2003. “Oriental Herbal Products: The Basis for Development of Dietary Supplements and New Medicines in the 21st Century.” In. ACS Publications.</p>
+</div>
+<div id="ref-levenstein2003revolution">
+<p>Levenstein, Harvey. 2003. <em>Revolution at the Table: The Transformation of the American Diet</em>. Vol. 7. University of California Press.</p>
+</div>
+<div id="ref-Livesey_2001">
+<p>Livesey, Geoffrey. 2001. “A Perspective on Food Energy Standards for Nutrition Labelling.” <em>British Journal of Nutrition</em> 85 (3): 271–87. <a href="https://doi.org/10.1079/bjn2000253" class="uri">https://doi.org/10.1079/bjn2000253</a>.</p>
+</div>
+<div id="ref-MA2015195">
+<p>Ma, Guansheng. 2015. “Food, Eating Behavior, and Culture in Chinese Society.” <em>Journal of Ethnic Foods</em> 2 (4): 195–99. <a href="https://doi.org/https://doi.org/10.1016/j.jef.2015.11.004" class="uri">https://doi.org/https://doi.org/10.1016/j.jef.2015.11.004</a>.</p>
+</div>
+<div id="ref-MILLS2017116">
+<p>Mills, Susanna, Martin White, Heather Brown, Wendy Wrieden, Dominika Kwasnicka, Joel Halligan, Shannon Robalino, and Jean Adams. 2017. “Health and Social Determinants and Outcomes of Home Cooking: A Systematic Review of Observational Studies.” <em>Appetite</em> 111: 116–34. <a href="https://doi.org/https://doi.org/10.1016/j.appet.2016.12.022" class="uri">https://doi.org/https://doi.org/10.1016/j.appet.2016.12.022</a>.</p>
+</div>
+<div id="ref-sidney1986sweetness">
+<p>Mintz, Sidney. 1986. <em>Sweetness and Power: The Place of Sugar in Modern History</em>. New York, Penguin Books.</p>
+</div>
+<div id="ref-MOSER201099">
+<p>Möser, Anke. 2010. “Food Preparation Patterns in German Family Households. An Econometric Approach with Time Budget Data.” <em>Appetite</em> 55 (1): 99–107. <a href="https://doi.org/https://doi.org/10.1016/j.appet.2010.04.008" class="uri">https://doi.org/https://doi.org/10.1016/j.appet.2010.04.008</a>.</p>
+</div>
+<div id="ref-OTHMAN201512">
+<p>Othman, Zulkeplee, Rosemary Aird, and Laurie Buys. 2015. “Privacy, Modesty, Hospitality, and the Design of Muslim Homes: A Literature Review.” <em>Frontiers of Architectural Research</em> 4 (1): 12–23. <a href="https://doi.org/https://doi.org/10.1016/j.foar.2014.12.001" class="uri">https://doi.org/https://doi.org/10.1016/j.foar.2014.12.001</a>.</p>
+</div>
+<div id="ref-paeratakul2003fast">
+<p>Paeratakul, Sahasporn, Daphne P Ferdinand, Catherine M Champagne, Donna H Ryan, and George A Bray. 2003. “Fast-Food Consumption Among Us Adults and Children: Dietary and Utrient Intake Profile.” <em>Journal of the American Dietetic Association</em> 103 (10): 1332–8.</p>
+</div>
+<div id="ref-nytimes">
+<p>Pollan, Michael. 2019.</p>
+</div>
+<div id="ref-smith2006encyclopedia">
+<p>Smith, Andrew F. 2006. <em>Encyclopedia of Junk Food and Fast Food</em>. Greenwood Publishing Group.</p>
+</div>
+<div id="ref-Smith_2010">
+<p>Smith, Kylie J., Sarah A. McNaughton, Seana L. Gall, Leigh Blizzard, Terence Dwyer, and Alison J. Venn. 2010. “Involvement of Young Australian Adults in Meal Preparation: Cross-Sectional Associations with Sociodemographic Factors and Diet Quality.” <em>Journal of the American Dietetic Association</em> 110 (9): 1363–7. <a href="https://doi.org/10.1016/j.jada.2010.06.011" class="uri">https://doi.org/10.1016/j.jada.2010.06.011</a>.</p>
+</div>
+<div id="ref-Swinburn_2011">
+<p>Swinburn, Boyd A, Gary Sacks, Kevin D Hall, Klim McPherson, Diane T Finegood, Marjory L Moodie, and Steven L Gortmaker. 2011. “The Global Obesity Pandemic: Shaped by Global Drivers and Local Environments.” <em>The Lancet</em> 378 (9793): 804–14. <a href="https://doi.org/10.1016/s0140-6736(11)60813-1" class="uri">https://doi.org/10.1016/s0140-6736(11)60813-1</a>.</p>
+</div>
+<div id="ref-teng2012recipe">
+<p>Teng, Chun-Yuen, Yu-Ru Lin, and Lada A Adamic. 2012. “Recipe Recommendation Using Ingredient Networks.” In <em>Proceedings of the 4th Annual Acm Web Science Conference</em>, 298–307. ACM.</p>
+</div>
+<div id="ref-Trattner_2017">
+<p>Trattner, Christoph, David Elsweiler, and Simon Howard. 2017. “Estimating the Healthiness of Internet Recipes: A Cross-Sectional Study.” <em>Frontiers in Public Health</em> 5 (February).</p>
+</div>
+<div id="ref-ulijaszek2017models">
+<p>Ulijaszek, Stanley J. 2017. <em>Models of Obesity: From Ecology to Complexity in Science and Policy</em>. Vol. 78. Cambridge University Press.</p>
+</div>
+<div id="ref-unesco">
+<p>UNESCO. 2013. Representative List of the Intangible Cultural Heritage of Humanity.</p>
+</div>
+<div id="ref-Wolfson_2014">
+<p>Wolfson, Julia A, and Sara N Bleich. 2014. “Is Cooking at Home Associated with Better Diet Quality or Weight-Loss Intention?” <em>Public Health Nutrition</em> 18 (8): 1397–1406. <a href="https://doi.org/10.1017/s1368980014001943" class="uri">https://doi.org/10.1017/s1368980014001943</a>.</p>
+</div>
+<div id="ref-world2003diet">
+<p>World Health Organization. 2003. <em>Diet, Nutrition, and the Prevention of Chronic Diseases: Report of a Joint Who/Fao Expert Consultation</em>. Vol. 916.</p>
+</div>
+<div id="ref-who_obesity">
+<p>———. 2018.</p>
+</div>
+<div id="ref-zai2015taoism">
+<p>Zai, Jiang. 2015. <em>Taoism and Science: Cosmology, Evolution, Morality, Health and More</em>. Ultravisum.</p>
+</div>
+<div id="ref-Zhai_2013">
+<p>Zhai, F. Y., S. F. Du, Z. H. Wang, J. G. Zhang, W. W. Du, and B. M. Popkin. 2013. “Dynamics of the Chinese Diet and the Role of Urbanicity, 1991-2011.” <em>Obesity Reviews</em> 15 (December): 16–26. <a href="https://doi.org/10.1111/obr.12124" class="uri">https://doi.org/10.1111/obr.12124</a>.</p>
+</div>
+<div id="ref-china">
+<p>Zhang, Guangzhi, and Eugene Newton Anderson. 1977. <em>Food in Chinese Culture: Anthropological and Historical Perspectives</em>. Yale University Press.</p>
+</div>
+<div id="ref-Zobel_2016">
+<p>Zobel, Emilie H., Tine W. Hansen, Peter Rossing, and Bernt Johan von Scholten. 2016. “Global Changes in Food Supply and the Obesity Epidemic.” <em>Current Obesity Reports</em> 5 (4): 449–55. <a href="https://doi.org/10.1007/s13679-016-0233-8" class="uri">https://doi.org/10.1007/s13679-016-0233-8</a>.</p>
+</div>
+</div>
+<section class="footnotes">
+<hr />
+<ol>
+<li id="fn1"><p>Dietary factors are one crucial element, but not the only one. Other factors are physical inactivity, sedentariness, genetics, the build environment <span class="citation" data-cites="Hruby_2016">(Hruby et al. 2016)</span> and more.<a href="#fnref1" class="footnote-back">↩</a></p></li>
+<li id="fn2"><p>Home cooking connects people and food, gives control of what is eaten, and how it tastes. It is a convivial social act, fun, creative, and affordable among other things.<a href="#fnref2" class="footnote-back">↩</a></p></li>
+<li id="fn3"><p><a href="https://www.bbcgoodfood.com/recipes/category/cuisines" class="uri">https://www.bbcgoodfood.com/recipes/category/cuisines</a>.<a href="#fnref3" class="footnote-back">↩</a></p></li>
+<li id="fn4"><p>Signature dishes are, for example, Tiramisù or Pizza Margherita for the Italian cuisine, Salmon Sushi Rolls or Ramen Noodle Soup for the Japanese cuisine, Turkish Delight or Kofta for the Turkish cuisine, etc.<a href="#fnref4" class="footnote-back">↩</a></p></li>
+<li id="fn5"><p>The FAO classification is available under <a href="http://www.fao.org/gsfaonline/foods/index.html" class="uri">http://www.fao.org/gsfaonline/foods/index.html</a>.<a href="#fnref5" class="footnote-back">↩</a></p></li>
+<li id="fn6"><p>There are strong voices who put the opinion forward that the United States of America are not an Anglo-saxon nation (c.f. <span class="citation" data-cites="10.2307/2084250">Detweiler (1938)</span>). Yet, these two highly industrialised nations share strong culinary ties.<a href="#fnref6" class="footnote-back">↩</a></p></li>
+<li id="fn7"><p>There is evidence of ’fast-food’ or processed food consumed outside of the home in cities of Roman antiquity (<span class="citation" data-cites="dupont1994daily">Dupont (1994)</span>) or 12th-century China (<span class="citation" data-cites="china">Zhang and Anderson (1977)</span>). However, in this paper I refer to the post-industrialisation fast-food culture.<a href="#fnref7" class="footnote-back">↩</a></p></li>
+<li id="fn8"><p>There are accounts of high-quality products in the American and British cuisines, however, the majority of the food culture resembles the opposite.<a href="#fnref8" class="footnote-back">↩</a></p></li>
+<li id="fn9"><p>In 2013 also Portugal, Cyprus, and Croatia were recognised and inscribed onto the list by the UNESCO.<a href="#fnref9" class="footnote-back">↩</a></p></li>
+<li id="fn10"><p>It can be credibly argued that the food cultures of East Asia and Southeast Asia are distinct from each other. However, on a global scale and for the purpose of this study they are considered culturally similar.<a href="#fnref10" class="footnote-back">↩</a></p></li>
+<li id="fn11"><p>For instance, the French cuisine has properties of the Mediterranean food culture, but the majority of the cuisine is something else than the culinary values of the Mediterranean food culture, etc.<a href="#fnref11" class="footnote-back">↩</a></p></li>
+<li id="fn12"><p>The obesity data is available from WHO’s Global Health Observatory Data Repository under <a href="http://apps.who.int/gho/data/node.imr.NCD_BMI_30C?lang=en" class="uri">http://apps.who.int/gho/data/node.imr.NCD_BMI_30C?lang=en</a>.<a href="#fnref12" class="footnote-back">↩</a></p></li>
+<li id="fn13"><p>Gross energy can be relatively easily measured with a bomb calorimeter.<a href="#fnref13" class="footnote-back">↩</a></p></li>
+<li id="fn14"><p>Outliers are defined as observations that lie below q25-k(q75-q25) or above q75+k(q75-q25) with k=1.5.<a href="#fnref14" class="footnote-back">↩</a></p></li>
+<li id="fn15"><p>These numbers are calculated as (<span class="math inline">⌀</span>kcal/2250)<span class="math inline">×</span>100, while the denominator is an average of the female and male daily energy requirement from the National Health Service (NHS). Available under: <a href="https://www.nhs.uk/common-health-questions/food-and-diet/what-should-my-daily-intake-of-calories-be/" class="uri">https://www.nhs.uk/common-health-questions/food-and-diet/what-should-my-daily-intake-of-calories-be/</a>.<a href="#fnref15" class="footnote-back">↩</a></p></li>
+<li id="fn16"><p>Simple carbohydrates include lactose (milk sugar), sucrose (table sugar) and fructose (fruit sugar) and are rapidly broken down and used as energy by the body. They can be naturally present or added to the recipe.<a href="#fnref16" class="footnote-back">↩</a></p></li>
+<li id="fn17"><p>The calculation looks as follows: <span class="math inline">(17.0/38.8) × 100 = 43.8%.</span><a href="#fnref17" class="footnote-back">↩</a></p></li>
+<li id="fn18"><p>This is calculated in comparison to the three other food cultures, i.e. <span class="math inline">17.0/[(9.0 + 9.4 + 11.3)/3] = 1.7</span>.<a href="#fnref18" class="footnote-back">↩</a></p></li>
+<li id="fn19"><p>This is the average of the four food cultures: <span class="math inline">(24.4 + 25.2 + 22.7 + 24.8)/4 = 24.3</span>.<a href="#fnref19" class="footnote-back">↩</a></p></li>
+<li id="fn20"><p>Available on page 56 from the <span class="citation" data-cites="world2003diet">World Health Organization (2003)</span> or <a href="https://www.who.int/dietphysicalactivity/publications/trs916/en/gsfao_overall.pdf?ua=1" class="uri">https://www.who.int/dietphysicalactivity/publications/trs916/en/gsfao_overall.pdf?ua=1</a>.<a href="#fnref20" class="footnote-back">↩</a></p></li>
+<li id="fn21"><p>Consumption rose from 4 pounds in 1704 to 90 pounds in 1900 <span class="citation" data-cites="sidney1986sweetness">(Mintz 1986)</span>.<a href="#fnref21" class="footnote-back">↩</a></p></li>
+<li id="fn22"><p>Exception are maybe the use of tomato purée and olive oil in the Asian food culture. However, olive oil is because of its beneficial health effects rapidly transforming into a global commodity.<a href="#fnref22" class="footnote-back">↩</a></p></li>
+</ol>
+</section>
