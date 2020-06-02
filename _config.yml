@@ -6,7 +6,7 @@ baseurl: "" # the subpath of your site, e.g. /blog/
 url: "" # the base hostname & protocol for your site
 
 strava_username: "12340304"
-github_username: "lucalino"
+github_username: "luccalino"
 
 # Build settings
 markdown: kramdown
