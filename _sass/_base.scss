@@ -294,6 +294,11 @@ header {
     color: $theme-primary;
 }
 
+.text-primary-align {
+    color: $theme-primary;
+    text-align: left;
+}
+
 .no-gutter > [class*='col-'] {
     padding-right:0;
     padding-left:0;
