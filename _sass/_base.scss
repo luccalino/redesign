@@ -284,9 +284,9 @@ header {
             .project-name {
                 @include sans-serif-font;
                 padding: 0 15px;
+                color: $theme-primary; // added full line
             }
             .project-category {
-                color: $theme-primary; // added full line
                 text-transform: uppercase;
                 font-weight: 600;
                 font-size: 14px;
@@ -305,10 +305,12 @@ header {
         .portfolio-box-caption {
             .portfolio-box-caption-content {
                 .project-category {
+                    color: $theme-primary; // added full line
                     font-size: 16px;
                 }
                 .project-name {
                     font-size: 14px; //22px;
+                    color: $theme-primary; // added full line
                 }
             }
         }
