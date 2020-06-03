@@ -288,6 +288,7 @@ header {
                 padding: 0 15px;
             }
             .project-category {
+                color: $theme-primary; // added full line
                 text-transform: uppercase;
                 font-weight: 600;
                 font-size: 14px;
