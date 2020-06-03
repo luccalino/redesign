@@ -141,7 +141,7 @@ aside {
         background-color: transparent;
         border-color: rgba(white, .3);
         .navbar-header .navbar-brand {
-            color: rgba(white, .7);
+            color: white; //rgba(white, .7);
             &:hover,
             &:focus {
                 color: white;
@@ -149,7 +149,7 @@ aside {
         }
         .nav > li > a,
         .nav > li > a:focus {
-            color: rgba(white, .7);
+            color: white; //rgba(white, .7);
             &:hover {
                 color: white;
             }
@@ -198,13 +198,14 @@ header {
                 text-transform: uppercase;
                 margin-top: 0;
                 margin-bottom: 0;
+                color: white; // added
             }
             hr {
                 margin: 30px auto;
             }
             p {
                 font-weight: 300;
-                color: rgba(white, .7);
+                color: white; //rgba(white, .7);
                 font-size: 16px;
                 margin-bottom: 50px;
             }
