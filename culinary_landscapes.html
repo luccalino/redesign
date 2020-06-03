@@ -34,7 +34,6 @@
         <div class="row">
             <div class="col-lg-8 col-lg-offset-2 text-center">
                 <h2 class="section-heading">Culinary landscapes</h2>
-                <p class="text-faded-main-dark text-center"><i>Note: Figures take considerable time to load. Improvment is on the way.</i></p> 
                 <hr class="primary text-center">
                 <p class="text-faded-main-dark">How is the restaurant landscape spread across countries in Europe? What are dominant cuisines?</p>  
                 <p class="text-faded-main-dark">These are the 3 key questions that have influenced my work. To answer them, I web-scrape information from all restaurants that are listed on TripAdvisor in Switzerland as of March 2020 (N = 25’748). I start by identifying the geocoded location and then filter the various kitchen styles. TripAdvisor lists up to three kitchen styles per restaurant. I consider the first kitchen style listed as the principal style of the restaurant. If the first listed kitchen style does not refer to a country specific kitchen, I take the 2nd then 3rd listed instead. For example, if the first kitchen style mentioned is ‘Swiss’, I define the restaurant’s cuisine as ‘Swiss’. However, if the first mentioned kitchen style is ‘Asian’, I consider the second kitchen style. If the second kitchen style meets the country-specific cooking criteria, i.e. ‘Thai’, I define the restaurant’s style as ‘Thai’. Otherwise, I consider the third mentioned kitchen style. If no country specific tag is mentioned, I define the kitchen as ‘Undefined’.</p>
@@ -44,9 +43,9 @@
                 <p class="text-faded-main-dark">The Swiss data has identified that Italian cuisine is the most dominant kitchen style within restaurants in Switzerland. 9’937 (or 38.6%) of all restaurants in Switzerland serve Italian-influenced food. The highest density of Italian restaurants are located in the canton of Ticino as you can see in Figure 1. Yet, Italian restaurants are found throughout the country, particularly accumulating in larger cities.</p>
                 <p class="text-faded-main-dark">Switzerland’s second most popular restaurant kitchen style found is Swiss with 6’626 restaurants which are predominately located in the Alpine region and the Mittelland.</p>
                 <p class="text-faded-main-dark">French restaurants (2’781) are the third largest group. Their dominance in the French-speaking part of Switzerland is impressive. However, outside of the French-speaking region, restaurants that serve French food are rare. An interesting case marks the canton of Valais where the language border (‘Röstigraben’) is impressively present.</p>
-                <p class="text-faded-main-dark">
-                  <img src='/img/country_plots/schweiz.jpg' width="741" height="600">
-              </p> 
+                <p class="text-faded-main-dark"><img src='/img/country_plots/schweiz.jpg' width="741" height="600"></p> 
+                <p class="text-faded-main-dark">Click
+                  <a href='https://luccalino.github.io/switzerland_ggplotly/' target="_blank">here</a> to access the graph interactively.</p> 
            </div>
         </div>
     </div>
