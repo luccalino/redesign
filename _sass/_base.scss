@@ -265,7 +265,7 @@ header {
     max-width: 650px;
     margin: 0 auto;
     .portfolio-box-caption {
-        color: white;
+        color: $theme-primary; //white;
         opacity: 0;
         display: block;
         background: rgba(#bfc6da, .9); //rgba( $theme-primary, .9 );
