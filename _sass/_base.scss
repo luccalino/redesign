@@ -263,6 +263,7 @@ header {
         opacity: 0;
         display: block;
         background: rgba(#bfc6da, .9); //rgba( $theme-primary, .9 );
+        border: 2px solid #bfc6da; //added full line
         position: absolute;
         bottom: 0;
         text-align: center;
