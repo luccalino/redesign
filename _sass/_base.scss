@@ -411,3 +411,16 @@ body {
     //margin-right: -100px;
     width: 50%;
 }
+
+// Zoom-in, zoom-out
+
+.container img {
+  margin: 100px;
+  transition: transform 0.25s ease;
+  cursor: zoom-in;
+}
+
+input[type=checkbox]:checked ~ label > img {
+  transform: scale(2);
+  cursor: zoom-out;
+}
