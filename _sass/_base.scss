@@ -411,20 +411,3 @@ body {
     //margin-right: -100px;
     width: 50%;
 }
-
-// Container width
-
-@media (min-width: 768px) {
-.my-custom-container{
-    width:100px;
-}}
-
-@media (min-width: 992px) {
-.my-custom-container{
-    width:820px;
-}}
-
-@media (min-width: 1200px) {
-.my-custom-container{
-    width:1000px;
-}}
