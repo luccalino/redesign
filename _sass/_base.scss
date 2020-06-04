@@ -418,13 +418,13 @@ input[type=checkbox] {
   display: none;
 }
 
-.container img {
+.my-container my-img {
   margin: 100px;
   transition: transform 0.25s ease;
   cursor: zoom-in;
 }
 
-input[type=checkbox]:checked ~ label > img {
+input[type=checkbox]:checked ~ label > my-img {
   transform: scale(2);
   cursor: zoom-out;
 }
