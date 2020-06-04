@@ -414,6 +414,10 @@ body {
 
 // Zoom-in, zoom-out
 
+input[type=checkbox] {
+  display: none;
+}
+
 .container img {
   margin: 100px;
   transition: transform 0.25s ease;
