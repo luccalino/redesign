@@ -141,17 +141,17 @@ aside {
         background-color: transparent;
         border-color: rgba(white, .3);
         .navbar-header .navbar-brand {
-            color: white; //rgba(white, .7);
+            color: $theme-primary; //white; //rgba(white, .7);
             &:hover,
             &:focus {
-                color: white;
+                color: yellow; // white;
             }
         }
         .nav > li > a,
         .nav > li > a:focus {
-            color: white; //rgba(white, .7);
+            color: $theme-primary; //white; //rgba(white, .7);
             &:hover {
-                color: white;
+                color: yellow; // white;
             }
         }
         &.affix {
