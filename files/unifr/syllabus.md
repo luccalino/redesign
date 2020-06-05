@@ -1,8 +1,7 @@
 ---
 title: '\textbf{Computergestütztes Programmieren mit PsychoPy: Syllabus}'
 author: Lucca Zachmann | lucca.zachmann@unifr.ch
-date: März 2020
-
+date: March 2020
 ---
 
 
