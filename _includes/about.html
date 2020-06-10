@@ -26,7 +26,14 @@
                 </script>
                 
                 <img src="img/square.png" width="200" height="200" style="cursor:default;visibility:hidden;" alt="Show/Hide Me" id="myImg"/>
-                <button class="btn btn-primary btn-xl page-scroll" type="button" id="btn1">Show/Hide Me</button>
+                <button class="btn btn-primary btn-xl page-scroll" type="button" id="btn1">Show/Hide Me</button>$
+                
+                function showImage(){
+                    document.getElementById('loadingImage').style.visibility=    document.getElementById('loadingImage').style.visibility == 'visible'? 'hidden' : 'visible';
+                }
+                
+                <input id="text" type="button" value="Explosion Button" onclick="showImage();"/>
+                <img id="loadingImage" src="img/square.png" style="visibility:hidden"/>
             
             </div>
         </div>
