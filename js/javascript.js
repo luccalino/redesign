@@ -1,5 +1,5 @@
 var quotes = [
-  'test',''hello','world'
+  "test","hello","world"
 ]
 
 function newQuote() {
