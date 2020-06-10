@@ -7,15 +7,21 @@
             (function() {
             var quotes = [
             {
-            text: "Paul"
+            text: "Visitor"
             },
             {
-            text: "Manuela",
+            text: "Guest"
+            },  
+            {
+            text: "Friend"
+            }, 
+            {
+            text: "Prospect",
             }
             ];
             var quote = quotes[Math.floor(Math.random() * quotes.length)];
             document.getElementById("quote").innerHTML =
-            '<h1>Welcome, dear <a href="" title="Info">' + quote.text + '</a>!</h1>';
+            '<h1>Welcome, dear <a title="Info">' + quote.text + '</a>!</h1>';
             })();
             </script>
             <hr style="border:3px solid $theme-primary;">
