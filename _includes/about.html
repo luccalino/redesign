@@ -16,26 +16,26 @@
                 <p class="text-faded-main-dark">Alternatively, I like to be active outdoors by riding my bike and running on a daily basis. In my free time I like to travel the world by means of bike-packing.</p>
                 <p class="text-faded-main-dark">Please contact me should you like to see my full CV. I am happy to share it with you via E-mail.</p>
      
-		    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
 		    
-<style>
-.myimgdivtoggle{
-	display:none;
-}
-</style>
-<script>
-$(document).ready(function(){
-	$('.togglebtn').click(function(){
-   		$('.myimgdivtoggle').toggle();
-	});
-});
-</script>
+		<style>
+		.myimgdivtoggle{
+		display:none;
+		}
+		</style>
+		<script>
+			$(document).ready(function(){
+			$('.togglebtn').click(function(){
+   			$('.myimgdivtoggle').slideToggle();
+		});
+		});
+		</script>
                 
                 
                 <div class="myimgdivtoggle">
-	            <img src="img/square.png" alt="display image on button click" class="img-responsive img-thumbnail"/>
+	            <img src="img/square.png" alt="Display image on button click" width="200" height="200" style="cursor:default;" class="img-responsive img-thumbnail"/>
                 </div>
-                <button type="button" class="togglebtn">Toggle Image</button>
+                <button type="button" class="btn btn-primary btn-xl page-scroll">Show/Hide me</button>
                 
                 <!--<script>
                     
