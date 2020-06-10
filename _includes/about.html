@@ -15,29 +15,17 @@
                 <p class="text-faded-main-dark">My day starts with coffee. I am impressed and consequently a big fan of food and beverages in which yeast strains or other bacteria have left their marks. Amongst those, bread is my favourite. Cooking is something that brings me great joy and I like to share the experience by welcoming and hosting people in my home. I like to learn new things.</p>
                 <p class="text-faded-main-dark">Alternatively, I like to be active outdoors by riding my bike and running on a daily basis. In my free time I like to travel the world by means of bike-packing.</p>
                 <p class="text-faded-main-dark">Please contact me should you like to see my full CV. I am happy to share it with you via E-mail.</p>
-            
-                <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-                <script type="text/javascript">
-                    $(document).ready(function(){
-                    $('#btn1').on("click",function(e){
-                    $('#myImg').toggle('slow');
-                    });
-                    });
-                </script>
-                
-                <img src="img/square.png" width="200" height="200" style="cursor:default;visibility:hidden;" alt="Show/Hide Me" id="myImg"/>
-                <button class="btn btn-primary btn-xl page-scroll" type="button" id="btn1">Show/Hide Me</button>$
-                
+           
                 <script>
                     
                 function showImage(){
-                    document.getElementById('loadingImage').style.visibility=    document.getElementById('loadingImage').style.visibility == 'visible'? 'hidden' : 'visible';
+                    document.getElementById('loadingImage').style.visibility=document.getElementById('loadingImage').style.visibility == 'visible'? 'hidden' : 'visible';
                 }
                 
                 </script>
                 
-                <input id="text" type="button" value="Explosion Button" onclick="showImage();"/>
-                <img id="loadingImage" src="img/square.png" style="visibility:hidden"/>
+                <input class="btn btn-primary btn-xl page-scroll" id="text" type="button" value="Show/Hide Me" onclick="showImage();"/>
+                <img id="loadingImage" src="img/square.png" width="200" height="200" style="cursor:default;visibility:hidden;"/>
             
             </div>
         </div>
