@@ -4,6 +4,21 @@
        
             <div id="quote"></div>
             
+            <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+            
+            <script>
+            $(function () {
+            count = 0;
+            wordsArray = ["Beta", "Gamma", "Delta", "Alpha"];
+            setInterval(function () {
+            count++;
+            $("#word").fadeOut(400, function () {
+            $(this).text(wordsArray[count % wordsArray.length]).fadeIn(400);
+            });
+            }, 2000);
+            });
+            </script>
+            
             <script>
             (function() {
             var quotes = [
@@ -25,6 +40,9 @@
             '<h1>Welcome, dear <a title="Info">' + quote.text + '</a>!</h1>';
             })();
             </script>
+            
+            <h1>Welcome, dear <div id="word">Alpha</div>!</h1>
+            
             <hr style="border:3px solid $theme-primary;">
             <p>Please find on my website materials of some of my recent projects.</p>
             
