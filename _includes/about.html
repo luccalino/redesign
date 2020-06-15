@@ -11,7 +11,45 @@
                     Your browser does not support HTML video.
                 </video>
                 <p></p>
-                <a href="#process" class="btn btn-primary btn-xl page-scroll">Mach mit!</a>
+                <div id="id01" class="modal">
+                     <!-- <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">&times;</span> -->
+                        <form class="modal-content" method="POST" action="https://formspree.io/info@foodcoop-zurgertrud.ch">
+                            <div class="container">
+                                <h1>Anmeldung</h1>
+                                <p>Fülle bitte das Anmeldeformular aus. Danke.</p>
+                                <hr>
+                                <label for="name"><b>Vor- und Nachname</b></label>
+                                <input type="text" placeholder="Dein Name" name="name" required>
+
+                                <label for="address"><b>Adresse</b></label>
+                                <input type="text" placeholder="Deine Adresse" name="address" required>
+
+                                <label for="email"><b>E-Mail</b></label>
+                                <input type="text" placeholder="Deine E-Mail" name="_replyto" required>
+
+                                <p>Durch die Anmeldung annerkennst du unsere <a href="#" style="color:dodgerblue">AGB</a>.</p>
+
+                                <div class="clearfix">
+                                    <button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">Abbrechen</button>
+                                    <button type="submit" class="signupbtn">Anmelden</button>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+
+                    <script>
+                    // Get the modal
+                    var modal = document.getElementById('id01');
+
+                    // When the user clicks anywhere outside of the modal, close it
+                    window.onclick = function(event) {
+                        if (event.target == modal) {
+                            modal.style.display = "none";
+                        }
+                    }
+                    </script>
+   
+                    <a onclick="document.getElementById('id01').style.display='block'" style="cursor: pointer;" class="btn btn-primary btn-xl page-scroll">Mach mit!</a>
             </div>
         </div>
     </div>
