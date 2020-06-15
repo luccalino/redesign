@@ -591,7 +591,7 @@ hr {
   box-sizing: border-box
 }
 
-div_we {
+div {
   position: relative;
   top: 0px;
   left: 0px;
@@ -612,7 +612,7 @@ img-responsive:hover {
   transition:opacity 2s;
 }
 
-heading_we {
+heading {
   line-height: 40px;
   font-weight: bold;
   font-family: "Trebuchet MS";
@@ -621,7 +621,7 @@ heading_we {
   display: block
 }
 
-div_we p_we {
+div p {
   z-index: -1;
   width: 420px;
   line-height: 20px;
