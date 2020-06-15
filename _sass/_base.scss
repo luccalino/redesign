@@ -585,3 +585,7 @@ hr {
     letter-spacing: 1px;
 }
 
+img:hover {
+  opacity: 0;
+  transition:opacity 2s;
+}
