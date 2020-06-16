@@ -322,6 +322,16 @@ header {
     padding: 15px 30px;
 }
 
+input[type=submit] {
+  @include button-variant(white, $theme-primary, $theme-primary);
+  @include sans-serif-font;
+  border: none;
+  border-radius: 300px;
+  font-weight: 700;
+  text-transform: uppercase;
+  padding: 15px 30px;  
+}
+
 // Contact
 #contact .fa {
     color: $theme-dark;
