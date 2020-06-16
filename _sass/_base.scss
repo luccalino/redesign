@@ -591,7 +591,52 @@ hr {
    width: 100%;
 }
 
-.image {
+.image1 {
+  opacity: 1;
+  display: block;
+  width: 100%;
+  height: auto;
+  transition: .5s ease;
+  backface-visibility: hidden;
+}
+
+.image2 {
+  opacity: 1;
+  display: block;
+  width: 100%;
+  height: auto;
+  transition: .5s ease;
+  backface-visibility: hidden;
+}
+
+.image3 {
+  opacity: 1;
+  display: block;
+  width: 100%;
+  height: auto;
+  transition: .5s ease;
+  backface-visibility: hidden;
+}
+
+.image4 {
+  opacity: 1;
+  display: block;
+  width: 100%;
+  height: auto;
+  transition: .5s ease;
+  backface-visibility: hidden;
+}
+
+.image5 {
+  opacity: 1;
+  display: block;
+  width: 100%;
+  height: auto;
+  transition: .5s ease;
+  backface-visibility: hidden;
+}
+
+.image6 {
   opacity: 1;
   display: block;
   width: 100%;
@@ -611,7 +656,27 @@ hr {
   text-align: center;
 }
 
-.container:hover .image {
+.container:hover .image1 {
+  opacity: 0.2;
+}
+
+.container:hover .image2 {
+  opacity: 0.2;
+}
+
+.container:hover .image3 {
+  opacity: 0.2;
+}
+
+.container:hover .image4 {
+  opacity: 0.2;
+}
+
+.container:hover .image5 {
+  opacity: 0.2;
+}
+
+.container:hover .image6 {
   opacity: 0.2;
 }
 
