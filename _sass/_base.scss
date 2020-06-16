@@ -608,18 +608,16 @@ hr {
 }
 
 .container:hover .image {
-  opacity: 0.2;
+  opacity: 0.3;
+}
+
+.container:hover .middle {
+  opacity: 1;
 }
 
 .text {
-  font-weight: bold;
-  color: black;
-  font-size: 16px;
-  padding: 16px 32px;
-}
-
-.text1 {
-  color: black;
+  background-color: #4CAF50;
+  color: white;
   font-size: 16px;
   padding: 16px 32px;
 }
