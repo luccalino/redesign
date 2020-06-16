@@ -587,6 +587,11 @@ hr {
 
 // Hover
 
+.container1 {
+  position: relative;
+  width: 100%;
+}
+
 .image {
   opacity: 1;
   display: block;
@@ -607,7 +612,7 @@ hr {
   text-align: center;
 }
 
-.container:hover .image {
+.container1:hover .image {
   opacity: 0.2;
 }
 
