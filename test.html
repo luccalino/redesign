@@ -101,7 +101,16 @@
 				label: 'My First dataset',
 				borderColor: window.chartColors.red,
 				backgroundColor: color(window.chartColors.red).alpha(0.2).rgbString(),
-				data: generateData()
+				data: [{
+                				x: -10,
+                				y: 0
+            				}, {
+                				x: 0,
+                				y: 10
+            				}, {
+                				x: 10,
+                				y: 5
+            				}]
 			}, {
 				label: 'My Second dataset',
 				borderColor: window.chartColors.blue,
