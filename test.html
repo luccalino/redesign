@@ -15,6 +15,8 @@
 </head>
 
 <body>
+	
+	<!--
 	<script>
 		
 	nv.addGraph(function() {
@@ -73,9 +75,11 @@
   	return data;
 	}
 	
+	-->
+	
 	</script>
 
-	<!--<div style="width:75%">
+	<div style="width:75%">
 		<canvas id="canvas"></canvas>
 	</div>
 	<button id="randomizeData">Randomize Data</button>
@@ -83,7 +87,7 @@
 		var color = Chart.helpers.color;
 		function generateData() {
 			var data = [];
-			for (var i = 0; i < 7000; i++) {
+			for (var i = 0; i < 10000; i++) {
 				data.push({
 					x: randomScalingFactor(),
 					y: randomScalingFactor()
@@ -132,7 +136,7 @@
 			window.myScatter.update();
 		});
 	</script>
-	-->
+	
 </body>
 
 </html>
