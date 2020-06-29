@@ -2,16 +2,88 @@
     <div class="container">
         <div class="row">
             <div class="col-lg-12 text-center">
-                <h2 class="section-heading">Ausgewähltes Produkt</h2>
+                <h2 class="section-heading">Neuste Produkte</h2>
                 <hr class="primary">
-                <button onclick="location.href='../sortiment.html';" class="btn btn-primary btn-xl page-scroll" style="width:auto;">Sortiment</button>
-                <p style="margin-bottom:1cm;"></p>
             </div>
         </div>
     </div>
         
     
+        
+    <div class="col-lg-12 col-sm-12">
+        <div class="slideshow-container">
+
+            <div class="mySlides fade">
+                <img src="img/portfolio/funky_tomato.jpg" style="width:100%">
+                <div class="text">Funky Tomato Pelato in Salsa</div>
+            </div>
+
+            <div class="mySlides fade">
+                <img src="img/portfolio/schokolade.png" style="width:100%">
+                <div class="text">Bio Zartbitter Schokolade (60%)</div>
+            </div>
+
+            <div class="mySlides fade">
+                <img src="img/portfolio/rigatoni.jpg" style="width:100%">
+                <div class="text">Bio-Rigatoni von Sozialkooperative Libera Terra</div>
+            </div>
+
+            <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+            <a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+        </div>
+        <br>
+
+        <div style="text-align:center">
+            <span class="dot" onclick="currentSlide(1)"></span> 
+            <span class="dot" onclick="currentSlide(2)"></span> 
+            <span class="dot" onclick="currentSlide(3)"></span> 
+        </div>
+    </div>
+
+<script>
+var slideIndex = 1;
+showSlides(slideIndex);
+
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("dot");
+  if (n > slides.length) {slideIndex = 1}    
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";  
+  }
+  for (i = 0; i < dots.length; i++) {
+      dots[i].className = dots[i].className.replace(" actived", "");
+  }
+  slides[slideIndex-1].style.display = "block";  
+  dots[slideIndex-1].className += " actived";
+}
+</script>
+    
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-12 text-center">
+                <h2 class="section-heading">Sortiment</h2>
+                <hr class="primary">
+            </div>
+        </div>
+    </div>
+    
     <!--
+                    <button onclick="location.href='../sortiment.html';" class="btn btn-primary btn-xl page-scroll" style="width:auto;">Sortiment</button>
+                <p style="margin-bottom:1cm;"></p>
+    -->
+
     <div class="container-fluid">
         <div class="row no-gutter">
             <div class="col-lg-4 col-sm-6">
@@ -59,71 +131,7 @@
                     </div>
                 </a>
             </div>
-           -->
-    
-    <div class="col-lg-12 col-sm-12">
-        <div class="slideshow-container">
-
-<div class="mySlides fade">
-  <img src="img/portfolio/funky_tomato.jpg" style="width:100%">
-  <div class="text">Funky Tomato Pelato in Salsa</div>
-</div>
-
-<div class="mySlides fade">
-  <img src="img/portfolio/schokolade.png" style="width:100%">
-  <div class="text">Bio Zartbitter Schokolade (60%)</div>
-</div>
-
-<div class="mySlides fade">
-  <img src="img/portfolio/rigatoni.jpg" style="width:100%">
-  <div class="text">Bio-Rigatoni von Sozialkooperative Libera Terra</div>
-</div>
-
-<a class="prev" onclick="plusSlides(-1)">&#10094;</a>
-<a class="next" onclick="plusSlides(1)">&#10095;</a>
-
-</div>
-<br>
-
-<div style="text-align:center">
-  <span class="dot" onclick="currentSlide(1)"></span> 
-  <span class="dot" onclick="currentSlide(2)"></span> 
-  <span class="dot" onclick="currentSlide(3)"></span> 
-</div>
-        </div>
-
-<script>
-var slideIndex = 1;
-showSlides(slideIndex);
-
-function plusSlides(n) {
-  showSlides(slideIndex += n);
-}
-
-function currentSlide(n) {
-  showSlides(slideIndex = n);
-}
-
-function showSlides(n) {
-  var i;
-  var slides = document.getElementsByClassName("mySlides");
-  var dots = document.getElementsByClassName("dot");
-  if (n > slides.length) {slideIndex = 1}    
-  if (n < 1) {slideIndex = slides.length}
-  for (i = 0; i < slides.length; i++) {
-      slides[i].style.display = "none";  
-  }
-  for (i = 0; i < dots.length; i++) {
-      dots[i].className = dots[i].className.replace(" actived", "");
-  }
-  slides[slideIndex-1].style.display = "block";  
-  dots[slideIndex-1].className += " actived";
-}
-</script>
-    
-     <!--
-        
-             <div class="col-lg-12 col-sm-12">
+            <div class="col-lg-12 col-sm-12">
                 <a href="#" class="portfolio-box">
                     <img src="img/portfolio/funky_tomato.jpg" class="img-responsive" alt="" width="768px">
                     <div class="portfolio-box-caption">
@@ -138,8 +146,7 @@ function showSlides(n) {
                     </div>
                 </a>
             </div>
-          
-             <div class="col-lg-4 col-sm-6">
+            <div class="col-lg-4 col-sm-6">
                 <a href="#" class="portfolio-box">
                     <img src="img/portfolio/schokolade.png" class="img-responsive" alt="" width="768px">
                     <div class="portfolio-box-caption">
@@ -154,7 +161,7 @@ function showSlides(n) {
                     </div>
                 </a>
             </div>
-             <div class="col-lg-4 col-sm-6">
+            <div class="col-lg-4 col-sm-6">
                 <a href="#" class="portfolio-box">
                     <img src="img/portfolio/soya_drink.png" class="img-responsive" alt="" width="768px">
                     <div class="portfolio-box-caption">
@@ -171,7 +178,6 @@ function showSlides(n) {
             </div>
        </div>
     </div>
-            -->
             
         <div class="container">
         <div class="row">
