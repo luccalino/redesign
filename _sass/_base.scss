@@ -797,7 +797,7 @@ img {vertical-align: middle;}
   height: 15px;
   width: 15px;
   margin: 0 2px;
-  background-color: rgba($theme-blue,0.7);
+  background-color: lighten($theme-blue, 20%); // rgba($theme-blue,0.7);
   border-radius: 50%;
   display: inline-block;
   transition: background-color 0.6s ease;
@@ -810,10 +810,10 @@ img {vertical-align: middle;}
 /* Fading animation */
 .fade {
   -webkit-animation-name: fade;
-  -webkit-animation-duration: 3s;
+  -webkit-animation-duration: 2.5s;
   -webkit-animation-fill-mode: forwards;
   animation-name: fade;
-  animation-duration: 3s;
+  animation-duration: 2.5s;
   animation-fill-mode: forwards;
 }
 
