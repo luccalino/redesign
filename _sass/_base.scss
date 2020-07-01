@@ -831,3 +831,10 @@ img {vertical-align: middle;}
 @media only screen and (max-width: 300px) {
   .prev, .next,.text {font-size: 8px}
 }
+
+// News banner
+
+.news {
+  background-color: lighten($theme-primary, 50%);
+  border-left: 6px solid lighten($theme-primary, 100%);
+}
