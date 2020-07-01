@@ -848,20 +848,20 @@ img {vertical-align: middle;}
   }
 }
 .news {
-  width: 100%; //350px;
-  height: 32px;
+  width: 500px;
+  height: 60px;
   overflow: hidden;
   //border: solid 1px green;
   position: relative;
 }
 .news ul {
-  width: 100%; //350px;
+  width: 500px; //350px;
   padding-left: 10px;
 }
 .news li {
   position: absolute;
   top: 0px;
-  line-height: 29px;
+  line-height: 40px; //29px;
   list-style: none;
   font-size: 10pt;
   animation: ticker 8s infinite linear;
