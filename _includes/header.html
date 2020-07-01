@@ -4,14 +4,14 @@
             <h1>FoodCoop Zur Gertrud</h1>
             <hr>
             <p style="font-size: 20px;">Die persönliche Einkaufsgemeinschaft im Sihlfeld für ökologisch und fair produzierte Lebensmittel.</p>
-            <p style="font-size: 18px;">NÄCHSTER VERTEILTAG: <div id="word" style="display:inline;vertical-align:top;">11. September 2020</div></p>
+            <p style="font-size: 18px;">NÄCHSTER VERTEILTAG: <div id="word" style="display:inline;vertical-align:top;font-size: 18px;">11. September 2020</div></p>
             
             <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
             
             <script>
             $(function () {
             count = 0;
-            wordsArray = ["11. September 2020", "in 72 Tagen", "Sei dabei!", "TOP"];
+            wordsArray = ["11. September 2020", "<p id="demo"></p>", "Sei dabei!", ""];
             setInterval(function () {
             count++;
             $("#word").fadeOut(400, function () {
