@@ -5,7 +5,6 @@
             <hr>
             <p>Die persönliche Einkaufsgemeinschaft im Sihlfeld für ökologisch und fair produzierte Lebensmittel.</p>
             <div class="news">
-                <p><strong>NÄCHSTER VERTEILTAG:</strong> 11. September 2020.</p>
                 <p id="demo"></p>
             </div>
             <a href="#about" class="btn btn-primary btn-xl page-scroll">Erfahre mehr</a>
@@ -32,8 +31,8 @@ var x = setInterval(function() {
   var seconds = Math.floor((distance % (1000 * 60)) / 1000);
     
   // Output the result in an element with id="demo"
-  document.getElementById("demo").innerHTML = days + " Tage und " + hours + "h "
-  + minutes + "m " + seconds + "s ";
+  document.getElementById("demo").innerHTML = "NÄCHSTER VERTEILTAG in " + days + " Tage und " + hours + "h "
+  + minutes + "m " + seconds + "s am 11. September 2020.";
     
   // If the count down is over, write some text 
   if (distance < 0) {
