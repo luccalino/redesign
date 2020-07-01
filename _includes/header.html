@@ -4,7 +4,14 @@
             <h1>FoodCoop Zur Gertrud</h1>
             <hr>
             <p style="font-size: 20px;">Die persönliche Einkaufsgemeinschaft im Sihlfeld für ökologisch und fair produzierte Lebensmittel.</p>
-            <p id="demo"></p>
+            <p style="font-size: 20px;">NÄCHSTER VERTEILTAG:</p>
+            <div class="news">
+                <ul>
+                    <li>11. September 2020</li>
+                    <li><p id="demo"></p></li>
+                    <li>Sei dabei!</li>
+                </ul>
+            </div>
             <a href="#about" class="btn btn-primary btn-xl page-scroll">Erfahre mehr</a>
         </div>
     </div>
@@ -29,7 +36,7 @@ var x = setInterval(function() {
   var seconds = Math.floor((distance % (1000 * 60)) / 1000);
     
   // Output the result in an element with id="demo"
-  document.getElementById("demo").innerHTML = "NÄCHSTER VERTEILTAG: 11. September 2020 (in " + days + " Tagen)";
+  document.getElementById("demo").innerHTML = " in " + days + " Tagen";
     
   // If the count down is over, write some text 
   if (distance < 0) {
