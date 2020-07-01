@@ -835,6 +835,6 @@ img {vertical-align: middle;}
 // News banner
 
 .news {
-  background-color: lighten($theme-primary, 50%);
-  border-left: 6px solid lighten($theme-primary, 100%);
+  background-color: $theme-primary;
+  border-left: 6px solid $theme-primary;
 }
