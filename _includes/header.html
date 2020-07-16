@@ -4,22 +4,8 @@
             <h1>FoodCoop Zur Gertrud</h1>
             <hr>
             <p style="font-size: 20px;">Die persönliche Einkaufsgemeinschaft im Sihlfeld für ökologisch und fair produzierte Lebensmittel.</p>
-            <p style="font-size: 18px;"><b>NÄCHSTER VERTEILTAG:</b> <div id="word" style="display:inline;vertical-align:top;font-size: 18px"><div id="demo">...</div></div></p>
-            
-            <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
-            
-            <script>
-            $(function () {
-            count = 0;
-            wordsArray = ["Mach mit!", "Freitag, 11. September 2020"];
-            setInterval(function () {
-            count++;
-            $("#word").fadeOut(400, function () {
-            $(this).text(wordsArray[count % wordsArray.length]).fadeIn(400);
-            });
-            }, 3000);
-            });
-            </script>
+            <p style="font-size: 25px;"><b>NÄCHSTER VERTEILTAG: Samstag, 11. September 2020</p>
+            <p style="font-size: 20px;"><b>Bestellfenster öffnet in <p id="demo"></p></p>
             
             <a href="#about" class="btn btn-primary btn-xl page-scroll">Erfahre mehr</a>
         </div>
