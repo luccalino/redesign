@@ -498,7 +498,10 @@ img {vertical-align: middle;}
 }
 
 @media only screen and (max-width: 300px) {
-  .slideshow-container {max-width: 200px;}
+  .slideshow-container {
+      max-width: 300px;
+      width: 60%;
+    }
 }
 
 /* Next & previous buttons */
