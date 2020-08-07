@@ -498,13 +498,16 @@ img {vertical-align: middle;}
 }
 
 @media only screen and (max-width: 300px) {
-  .slideshow-container {
+    .slideshow-container {
       max-width: 300px;
       width: 60%;
     }
-   img {
+    img {
       width: 200px;
     }  
+    .prev, .next {
+       position: relative;
+    }
 }
 
 /* Next & previous buttons */
@@ -596,7 +599,7 @@ img {vertical-align: middle;}
   .prev, .next,.text {font-size: 8px}
 }
 
-// counter
+// Counter
 
 .counter-section i {
      display: block;
