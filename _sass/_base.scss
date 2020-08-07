@@ -503,10 +503,12 @@ img {vertical-align: middle;}
       width: 60%;
     }
     img {
-      width: 200px;
+      width: 100px;
+      height: 200px;
     }  
     .prev, .next {
        position: relative;
+       padding: 0px;
     }
 }
 
