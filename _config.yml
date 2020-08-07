@@ -15,4 +15,4 @@ markdown: kramdown
 analytics:
   provider               :  "google-universal" # false (default), "google", "google-universal", "custom"
   google:
-    tracking_id          : "UA-163585861-2"
+    tracking_id          : "UA-163585861-3"
