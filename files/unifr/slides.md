@@ -3,6 +3,7 @@ title: "Computergestütztes Experimentieren"
 subtitle: "Teil 2: Programmieren mit PsychoPy :sunglasses: <br><br>"
 author: "Lucca Zachmann"
 institute: "Universität Fribourg"
+date: March 2020
 header-includes: \metroset{progressbar=frametitle,sectionpage=progressbar}
 pandoc-latex-unlisted: [unlisted]
 lang: en-US
