@@ -18,11 +18,22 @@
       newImg.src = "http://apod.nasa.gov/apod/image/0710/iapetus2_cassini_big.jpg";       
     }
   </script>
+  
+  <style>
+    .loading {
+    background:transparent url(http://upload.wikimedia.org/wikipedia/commons/4/42/Loading.gif) center center no-repeat;
+    }
+  </style>  
+  
 </head>
 
 <body>
 
-<img id="test" src="http://upload.wikimedia.org/wikipedia/commons/4/42/Loading.gif" >
+<!-- <img id="test" src="http://upload.wikimedia.org/wikipedia/commons/4/42/Loading.gif" > -->
+  
+<div class="loading">
+    <img src="http://apod.nasa.gov/apod/image/0710/iapetus2_cassini_big.jpg" alt="test" />
+</div>
 
 </body>
 </html>
