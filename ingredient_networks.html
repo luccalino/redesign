@@ -35,24 +35,11 @@
     <!-- Custom CSS -->
     <link rel="stylesheet" href="css/main.css" type="text/css">
     
-    <!-- Loader script -->
-    <script type="text/javascript">
-    onload = function()
-    {
-      // Create an image object. This serves as a pre-loader
-      var newImg = new Image();
-
-      // When the image is given a new source, apply it to a DOM image
-      // after it has loaded
-      newImg.onload = function()
-      {
-        document.getElementById( 'test' ).src = newImg.src; 
+    <style>
+      .loading {
+      background:transparent url(http://upload.wikimedia.org/wikipedia/commons/4/42/Loading.gif) center center no-repeat;
       }
-
-      // Set the source to a really big image
-      newImg.src = "img/ingredient_pairings/network_radial_ingredient_pairings_world.png";       
-    }
-  </script>
+    </style> 
 
 </head>
   
@@ -68,7 +55,7 @@
                 <p class="text-faded-main-dark">
                   <input type="checkbox" id="zoomCheck_world">
                     <label for="zoomCheck_world">
-                        <img id="test" src="http://upload.wikimedia.org/wikipedia/commons/4/42/Loading.gif" width="741" height="auto">
+                      
                         <!-- <img src='img/ingredient_pairings/network_radial_ingredient_pairings_world.png' width="741" height="auto"> -->
                     </label>
                 <p style="margin-bottom:2cm;"></p>  
